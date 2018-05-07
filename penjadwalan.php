@@ -64,74 +64,95 @@
 						<img src="img/logo.png" class="img-circle center-block" width="100" height="100" >
 						<h4 class="text-center">Manager</h4>
 					</div>
-					<li><a href="awal.html">Beranda</a></li>
-					<li class="active"><a href="forecast.html">Demand Forecast <span class="sr-only">(current)</span></a></li>
-					<li><a href="stock.html">Stock</a></li>
-					<li><a href="penjadwalan.html">Penjadwalan</a></li>
-					<li><a href="toko.html">Daftar toko</a></li>
+					<li> <a href="awal.php">Beranda</a></li>
+					<li ><a href="forecast.php">Demand Forecast <span class="sr-only">(current)</span></a></li>
+					<li><a href="stock.php">Stock</a></li>
+					<li class="active"><a href="penjadwalan.php">Penjadwalan</a></li>
+					<li><a href="toko.php">Daftar toko</a></li>
 				</ul>
 			</div>
 
 
 
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-				<h1 class="page-header">Input Data Penjualan</h1>
+				<h1 class="page-header">Penjadwalan Produksi</h1>
 				<div>
+
+					<div class="row">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_penjadwalan">Tambah</button>
+					</div>
 					<form>
 						<div class="form-group row">
-							<div class="col-sm-1">
+							<div class="col-sm-2">
 								<label for="emailAdress" class="control-label">Tipe Produk</label>
 							</div>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" id="judul" placeholder="Tipe" name="Tipe">
+							<div class="col-sm-4">
+								<input type="list-tab" class="form-control" id="judul" placeholder="Tipe" name="Tipe">
 							</div>
 						</div>
-						<div class="form-group row">
-							<div class="col-sm-1">
-								<label for="emailAdress" class="control-label">Tanggal</label>
-							</div>
-							<div class="col-sm-9">
-								<input type="date" class="form-control" id="judul" placeholder="Nama" name="Nama">
-							</div>
+						<div>
+
+							<table class="table">
+								<thead class="thead-dark">
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Tipe Produk</th>
+										<th scope="col">Lama Produksi</th>
+										<th scope="col">Mulai Produksi</th>
+										<th scope="col">Akhir Produksi</th>></h1>
+										<th scope="col">Jumlah</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>XX1</td>
+										<td>1 bulan</td>
+										<td>30 april 2018</td>
+										<td>30 mei 2018</td>
+										<td>300 pcs</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>XX1</td>
+										<td>1 bulan</td>
+										<td>30 april 2018</td>
+										<td>30 mei 2018</td>
+										<td>300 pcs</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>XX1</td>
+										<td>1 bulan</td>
+										<td>30 april 2018</td>
+										<td>30 mei 2018</td>
+										<td>300 pcs</td>
+									</tr>
+								</tbody>
+							</table>
+
 						</div>
-						<div class="form-group row">
-							<div class="col-sm-1">
-								<label for="emailAdress" class="control-label">Nama barang</label>
-							</div>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" id="judul" placeholder="Nama" name="Nama">
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col-sm-1">
-								<label for="emailAdress" class="control-label">Jumlah penjualan</label>
-							</div>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" id="judul" placeholder="Jumlah" name="Jumlah">
-							</div>
-						</div>
-					
-						</div>
-						<div class="form-group">
-							<div class="col-sm-offset-9 col-sm-3">
-								<button type="submit" class="btn btn-primary"><a href="penjualan.html">Simpan</button>
-							</div>
-						</div>
-					</form>
+
+						</form>
+
+
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+
+	<?php include 'element/modal.php'; ?>
 
 <!-- Bootstrap core JavaScript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-	<script src="../../dist/js/bootstrap.min.js"></script>
+	<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="js/bootstrap.min.js"></script>
 	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-	<script src="../../assets/js/vendor/holder.min.js"></script>
+	<script src="assets/js/vendor/holder.min.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

@@ -64,56 +64,22 @@
 						<img src="img/logo.png" class="img-circle center-block" width="100" height="100" >
 						<h4 class="text-center">Manager</h4>
 					</div>
-					<li> <a href="awal.html">Beranda</a></li>
-					<li><a href="forecast.html">Demand Forecast <span class="sr-only">(current)</span></a></li>
-					<li><a href="stock.html">Stock</a></li>
-					<li><a href="penjadwalan.html">Penjadwalan</a></li>
-					<li class="active"><a href="toko.html">Daftar toko</a></li>
+					<li> <a href="awal.php">Beranda</a></li>
+					<li><a href="forecast.php">Demand Forecast <span class="sr-only">(current)</span></a></li>
+					<li><a href="stock.php">Stock</a></li>
+					<li><a href="penjadwalan.php">Penjadwalan</a></li>
+					<li class="active"><a href="toko.php">Daftar toko</a></li>
 				</ul>
 			</div>
 
-			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-				<h1 class="page-header">Input Data Toko</h1>
-				<div>
-					<form>
-						<div class="form-group row">
-							<div class="col-sm-1">
-								<label for="emailAdress" class="control-label">Nama Toko</label>
-							</div>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" id="judul" placeholder="Tipe" name="Tipe">
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col-sm-1">
-								<label for="emailAdress" class="control-label">Pemilik Toko</label>
-							</div>
-							<div class="col-sm-9">
-								<input type="date" class="form-control" id="judul" placeholder="Nama" name="Nama">
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col-sm-1">
-								<label for="emailAdress" class="control-label">Alamat Toko</label>
-							</div>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" id="judul" placeholder="Nama" name="Nama">
-							</div>
-						</div>
-						
-					</div>
-					<div class="form-group">
-						<div class="col-sm-offset-9 col-sm-3">
-							<button type="submit" class="btn btn-primary"><a href="#">Simpan</button>
-
-							</div>
-						</form>
-					</div>
-				</div>
-			</a>
-		</div>
 		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 			<h1 class="page-header">Daftar Toko</h1>
+			
+							<div class="row">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_toko">Tambah</button>
+				</div>
+
+
 			<div>
 				<form>
 					<div class="row">
@@ -143,15 +109,17 @@
 	</div>
 </div>
 
+	<?php include 'element/modal.php'; ?>
+
 <!-- Bootstrap core JavaScript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-	<script src="../../dist/js/bootstrap.min.js"></script>
+	<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="js/bootstrap.min.js"></script>
 	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-	<script src="../../assets/js/vendor/holder.min.js"></script>
+	<script src="assets/js/vendor/holder.min.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

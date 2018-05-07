@@ -64,26 +64,33 @@
 						<img src="img/logo.png" class="img-circle center-block" width="100" height="100" >
 						<h4 class="text-center">Manager</h4>
 					</div>
-					<li> <a href="awal.html">Beranda</a></li>
-					<li ><a href="forecast.html">Demand Forecast <span class="sr-only">(current)</span></a></li>
-					<li><a href="stock.html">Stock</a></li>
-					<li class="active"><a href="#">Penjadwalan</a></li>
-					<li><a href="toko.html">Daftar toko</a></li>
+					<li> <a href="awal.php">Beranda</a></li>
+					<li><a href="forecast.php">Demand Forecast <span class="sr-only">(current)</span></a></li>
+					<li class="active"><a href="stock.php">Stock</a></li>
+					<li><a href="penjadwalan.php">Penjadwalan</a></li>
+					<li><a href="toko.php">Daftar toko</a></li>
 				</ul>
 			</div>
 
+			
 
 
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-				<h1 class="page-header">Penjadwalan Produksi</h1>
+				<h1 class="page-header">Tabel Ketersediaan barang</h1>
+				
+				<div class="row">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_stock">Tambah</button>
+				</div>
+
+
 				<div>
 					<form>
 						<div class="form-group row">
-							<div class="col-sm-2">
-								<label for="emailAdress" class="control-label">Tipe Produk</label>
+							<div class="col-sm-1">
+								<label for="emailAdress" class="control-label">Tanggal</label>
 							</div>
 							<div class="col-sm-4">
-								<input type="list-tab" class="form-control" id="judul" placeholder="Tipe" name="Tipe">
+								<input type="date" class="form-control" id="judul" placeholder="Tipe" name="Tipe">
 							</div>
 						</div>
 						<div>
@@ -92,37 +99,33 @@
 								<thead class="thead-dark">
 									<tr>
 										<th scope="col">#</th>
-										<th scope="col">Tipe Produk</th>
-										<th scope="col">Lama Produksi</th>
-										<th scope="col">Mulai Produksi</th>
-										<th scope="col">Akhir Produksi</th>></h1>
-										<th scope="col">Jumlah</th>
+										<th scope="col">Tipe Barang</th>
+										<th scope="col">Tersedia</th>
+										<th scope="col">Peramalan</th>
+										<th scope="col">Safety</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<th scope="row">1</th>
 										<td>XX1</td>
-										<td>1 bulan</td>
-										<td>30 april 2018</td>
-										<td>30 mei 2018</td>
-										<td>300 pcs</td>
+										<td>112</td>
+										<td>113</td>
+										<td>2</td>
 									</tr>
 									<tr>
 										<th scope="row">2</th>
-										<td>XX1</td>
-										<td>1 bulan</td>
-										<td>30 april 2018</td>
-										<td>30 mei 2018</td>
-										<td>300 pcs</td>
+										<td>XX2</td>
+										<td>113</td>
+										<td>114</td>
+										<td>3</td>
 									</tr>
 									<tr>
 										<th scope="row">3</th>
-										<td>XX1</td>
-										<td>1 bulan</td>
-										<td>30 april 2018</td>
-										<td>30 mei 2018</td>
-										<td>300 pcs</td>
+										<td>XX3</td>
+										<td>112</td>
+										<td>113</td>
+										<td>2</td>
 									</tr>
 								</tbody>
 							</table>
@@ -134,22 +137,21 @@
 								</div>
 							</div>
 						</form>
-
-
 					</div>
 				</div>
-			</div>
-		</div>
+
+
+				<?php include 'element/modal.php'; ?>
 
 <!-- Bootstrap core JavaScript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-	<script src="../../dist/js/bootstrap.min.js"></script>
+	<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="js/bootstrap.min.js"></script>
 	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-	<script src="../../assets/js/vendor/holder.min.js"></script>
+	<script src="assets/js/vendor/holder.min.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

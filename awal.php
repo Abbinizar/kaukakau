@@ -65,16 +65,16 @@
 						<h4 class="text-center">Manager</h4>
 					</div>
 					<li class="active"> <a href="awal.php">Beranda</a></li>
-					<li><a href="forecast.html">Demand Forecast <span class="sr-only">(current)</span></a></li>
-					<li><a href="stock.html">Stock</a></li>
-					<li><a href="penjadwalan.html">Penjadwalan</a></li>
-					<li><a href="toko.html">Daftar toko</a></li>
+					<li><a href="forecast.php">Demand Forecast <span class="sr-only">(current)</span></a></li>
+					<li><a href="stock.php">Stock</a></li>
+					<li><a href="penjadwalan.php">Penjadwalan</a></li>
+					<li><a href="toko.php">Daftar toko</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 				<h1 class="page-header">Daftar Toko</h1>
 				<div class="row">
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_toko">Tambah</button>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_produk">Tambah</button>
 				</div>
 				<div>
 					<form>
