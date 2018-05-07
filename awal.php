@@ -64,24 +64,18 @@
 						<img src="img/logo.png" class="img-circle center-block" width="100" height="100" >
 						<h4 class="text-center">Manager</h4>
 					</div>
-					<li class="active"> <a href="awal.html">Beranda</a></li>
+					<li class="active"> <a href="awal.php">Beranda</a></li>
 					<li><a href="forecast.html">Demand Forecast <span class="sr-only">(current)</span></a></li>
 					<li><a href="stock.html">Stock</a></li>
 					<li><a href="penjadwalan.html">Penjadwalan</a></li>
 					<li><a href="toko.html">Daftar toko</a></li>
 				</ul>
 			</div>
-
-
-			<div class="col-sm-offset-9 col-sm-3">
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-					Launch demo modal
-				</button>
-			</div>
-
-
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 				<h1 class="page-header">Daftar Toko</h1>
+				<div class="row">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_toko">Tambah</button>
+				</div>
 				<div>
 					<form>
 						<div class="row">
@@ -102,15 +96,12 @@
 								</div>
 							</div>
 						</div>
-
 					</form>
-
-
 				</div>
 			</div>
-
 		</div>
 	</div>
+
 
 	<?php include 'element/modal.php'; ?>
 
