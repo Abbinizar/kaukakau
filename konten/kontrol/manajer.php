@@ -8,7 +8,7 @@ class manajer
 
     public function home()
     {
-        require_once 'konten/tampilan/manajer.php';
+        require_once 'konten/tampilan/awal.php';
 
     }
 

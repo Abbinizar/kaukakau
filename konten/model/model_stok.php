@@ -9,15 +9,15 @@ class model_stok
     public static function bacaStok()
     {
         $db = DB::getInstance();
-        $hasil = $db->query("SELECT * FROM stok;");
+        $hasil = $db->query("SELECT * FROM stock;");
         if ($hasil->rowCount() > 0) {
             foreach ($hasil as $item) {
                 $output[] = array(
                     'id' => $item['id'],
                     'tanggal' => $item['tanggal'],
-                    'jumlahstok' => $item['jumlahstok'],
+                    'jumlah_stock' => $item['jumlah_stock'],
                     'peramalan' => $item['peramalan'],
-                    'safetyproduct' => $item['safetyproduct']
+                    'safety_stock' => $item['safety_stock']
                 );
             }
             return $output;
@@ -29,7 +29,7 @@ class model_stok
     public static function tambahStok($tanggal, $jumlah)
     {
         $db = DB::getInstance();
-        $status = $db->exec("INSERT INTO stok(tanggal, jumlah) VALUES ('$tanggal', $jumlah);");
+        $status = $db->exec("INSERT INTO stock(tanggal, jumlah) VALUES ('$tanggal', $jumlah);");
         if ($status > 0) {
             return 'sukses';
         } else {

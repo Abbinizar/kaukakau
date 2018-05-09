@@ -56,10 +56,10 @@
                     <h4 class="text-center">Manager</h4>
                 </div>
                 <li class="active"><a href="awal.php">Beranda</a></li>
-                <li><a href="forecast.php">Demand Forecast <span class="sr-only">(current)</span></a></li>
-                <li><a href="stock.php">Stock</a></li>
-                <li><a href="penjadwalan.php">Penjadwalan</a></li>
-                <li><a href="toko.php">Daftar toko</a></li>
+                <li><a href="konten/tampilan/forecast.php">Demand Forecast <span class="sr-only">(current)</span></a></li>
+                <li><a href="konten/tampilan/stock.php">Stock</a></li>
+                <li><a href="konten/tampilan/penjadwalan.php">Penjadwalan</a></li>
+                <li><a href="konten/tampilan/toko.php">Daftar toko</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
