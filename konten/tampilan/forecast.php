@@ -9,10 +9,10 @@
 
     <title>Beranda</title>
 
-    <link href="aset/css/bootstrap.css" rel="stylesheet"/>
-    <link href="aset/css/font-awesome.min.css" rel="stylesheet"/>
-    <link href="aset/css/font-awesome-animation.css" rel="stylesheet"/>
-    <link href="aset/css/style.css" rel="stylesheet"/>
+    <link href="../../aset/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../../aset/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../../aset/css/font-awesome-animation.css" rel="stylesheet"/>
+    <link href="../../aset/css/style.css" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

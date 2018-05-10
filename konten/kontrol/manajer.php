@@ -12,6 +12,10 @@ class manajer
 
     }
 
+    public function manajer(){
+    
+    }
+
     /**
      * TODO buat method yang berhubungan dengan manajer
      * method untuk lihat lihat
