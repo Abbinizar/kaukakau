@@ -26,10 +26,10 @@ class model_stok
         }
     }
 
-    public static function tambahStok($tanggal, $jumlah)
+    public static function tambahStok($tanggal, $jumlah_stock)
     {
         $db = DB::getInstance();
-        $status = $db->exec("INSERT INTO stock(tanggal, jumlah) VALUES ('$tanggal', $jumlah);");
+        $status = $db->exec("INSERT INTO stock(tanggal, jumlah_stock) VALUES ('$tanggal', $jumlah_stock);");
         if ($status > 0) {
             return 'sukses';
         } else {
@@ -37,14 +37,19 @@ class model_stok
         }
     }
 
-    public static function perbaruiStok($id, $tanggal, $jumlah)
+    public static function perbaruiStok($id, $tanggal, $jumlah_stock)
     {
         $db = DB::getInstance();
-        $status = $db->exec("UPDATE stok set tanggal='$tanggal', jumlah='$jumlah' WHERE id=$id;");
+        $status = $db->exec("UPDATE stok set tanggal='$tanggal', jumlah_stock='$jumlah_stock' WHERE id=$id;");
         if ($status > 0) {
             return 'sukses';
         } else {
             return 'gagal';
         }
+    }
+    public static function hapusStok ($id)
+    {
+        $db = DB::getInstance();
+        $db->query("DELETE FROM stock WHERE id=$id");
     }
 }

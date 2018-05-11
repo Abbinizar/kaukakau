@@ -168,15 +168,7 @@
             </div>
             <div class="modal-body">
                 <form action="" method="post">
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="Lama" class="control-label">Lama Produksi</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="lama_produksi" placeholder="Tipe"
-                                   name="lama_produksi">
-                        </div>
-                    </div>
+                    
                     <div class="form-group row">
                         <div class="col-sm-1">
                             <label for="emailAdress" class="control-label">Tanggal mulai</label>
