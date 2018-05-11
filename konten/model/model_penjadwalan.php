@@ -1,5 +1,8 @@
 <?php
 
+include 'koneksi.php';
+include 'route.php';
+
 class model_penjadwalan
 {
     function __construct()

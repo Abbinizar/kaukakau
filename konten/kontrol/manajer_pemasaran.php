@@ -7,17 +7,10 @@ class manajer_pemasaran
     }
 
     //halaman home manajer pemasaran
-    public function home()
+    public function forecast()
     {
         $data = model_pemasaran::bacaDataPenjualan();
         require_once 'konten/tampilan/forecast.php';
-    }
-
-    //halaman data toko
-    public function toko()
-    {
-//        require_once 'konten/tampilan/';
-        echo 'belum diimplementasi';
     }
 
     public function tambah_penjualan()
@@ -40,18 +33,45 @@ class manajer_pemasaran
         );
     }
 
+    public function hapus_penjualan()
+    {
+        model_pemasaran::hapusDataPenjualan(
+            $_POST['id']
+        );
+    }
+
+    //halaman data toko
+    public function toko()
+    {
+        $data = model_pemasaran::bacaDataToko();
+        require_once 'konten/tampilan/toko.php';
+    }
+
+    
     public function tambah_toko()
     {
-
+        model_pemasaran::tambahDataToko(
+            $_POST['namatoko'],
+            $_POST['alamat'],
+            $_POST['pemilik']
+        );
     }
 
     public function update_toko()
     {
-
+        model_pemasaran::perbaruiDataToko(
+            $_POST['id'],
+            $_POST['namatoko'],
+            $_POST['alamat'],
+            $_POST['pemilik']
+        );
     }
 
     public function hapus_toko()
     {
+        model_pemasaran::hapusDataToko(
+            $_POST['id']
+        );
 
     }
 }

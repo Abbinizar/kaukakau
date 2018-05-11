@@ -13,7 +13,16 @@ class manajer
     }
 
     public function manajer(){
-    
+        $data = model_stok::bacaStok();
+        require_once 'konten/tampilan/stok.php';
+        $data = model_pemasaran::bacaDataPenjualan();
+        require_once 'konten/tampilan/forecast.php';
+        $data = model_penjadwalan::bacaJadwal();
+        require_once 'konten/tampilan/penjadwalan.php';
+        $data = model_pemasaran::bacaDataToko();
+        require_once 'konten/tampilan/toko.php';
+        $data = model_penjadwalan::bacaProduk();
+        require_once 'konten/tampilan/awal.php';
     }
 
     /**
