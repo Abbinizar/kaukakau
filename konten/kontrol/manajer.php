@@ -30,3 +30,4 @@ class manajer
      * method untuk lihat lihat
      */
 }
+?>

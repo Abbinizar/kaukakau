@@ -1,7 +1,5 @@
 <?php
 
-include 'koneksi.php';
-include 'route.php';
 
 class model_penjadwalan
 {
@@ -101,3 +99,4 @@ class model_penjadwalan
         $db->query("DELETE FROM produk WHERE id =$id");
     }
 }
+?>

@@ -5,6 +5,9 @@ class manajer_stok
     function __construct()
     {
     }
+    public function home(){
+        require_once 'konten/tampilan/stock.php';
+    }
 
     public function stock()
     {
@@ -34,3 +37,4 @@ class manajer_stok
         );
     }
 }
+?>

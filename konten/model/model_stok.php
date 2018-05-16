@@ -1,7 +1,6 @@
 <?php
 
-include 'koneksi.php';
-include 'route.php';
+
 
 class model_stok
 {
@@ -56,3 +55,4 @@ class model_stok
         $db->query("DELETE FROM stock WHERE id=$id");
     }
 }
+?>

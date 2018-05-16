@@ -5,6 +5,9 @@ class manajer_pemasaran
     function __construct()
     {
     }
+    public function home(){
+        require_once 'konten/tampilan/forecast.php';
+    }
 
     //halaman home manajer pemasaran
     public function forecast()
@@ -75,3 +78,4 @@ class manajer_pemasaran
 
     }
 }
+?>

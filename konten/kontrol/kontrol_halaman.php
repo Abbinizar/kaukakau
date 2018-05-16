@@ -27,15 +27,15 @@ class kontrol_halaman
                 $_SESSION['level'] = $hasil;
                 header("location: http://localhost/kaukakau/?c=manajer&f=home");
 
-            } else if ($hasil == 'manajer_pemasaran') {
+            } else if ($hasil == 'pemasaran') {
                 $_SESSION['level'] = $hasil;
                 header("location: http://localhost/kaukakau/?c=manajer_pemasaran&f=home");
 
-            } else if ($hasil == 'manajer_stok') {
+            } else if ($hasil == 'gudang') {
                 $_SESSION['level'] = $hasil;
                 header("location: http://localhost/kaukakau/?c=manajer_stok&f=home");
 
-            } else if ($hasil == 'manajer_penjadwalan') {
+            } else if ($hasil == 'produksi') {
                 $_SESSION['level'] = $hasil;
                 header("location: http://localhost/kaukakau/?c=manajer_penjadwalan&f=home");
 
@@ -51,3 +51,4 @@ class kontrol_halaman
         if (session_destroy()) header("location: http://localhost/kaukakau/");
     }
 }
+?>

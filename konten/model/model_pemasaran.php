@@ -1,7 +1,5 @@
 <?php
 
-include 'koneksi.php';
-include 'route.php';
 
 class model_pemasaran
 {
@@ -102,3 +100,4 @@ class model_pemasaran
     } 
 
 }
+?>

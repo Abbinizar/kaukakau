@@ -1,7 +1,5 @@
 <?php
 
-include 'koneksi.php';
-include 'route.php';
 
 class model_manajer
 {
@@ -9,3 +7,5 @@ class model_manajer
     {
     }
 }
+
+?>
