@@ -9,25 +9,25 @@
 
     <title>Beranda</title>
 
-    <link href="aset/css/bootstrap.css" rel="stylesheet"/>
+    <link href="aset/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="aset/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="aset/css/font-awesome-animation.css" rel="stylesheet"/>
-    <link href="aset/css/style.css" rel="stylesheet"/>
+    <link href="aset/css/style-custom.css" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+<![endif]-->
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -55,11 +55,11 @@
                     <img src="img/logo.png" class="img-circle center-block" width="100" height="100">
                     <h4 class="text-center">Manager</h4>
                 </div>
-                <li><a href="awal.php">Beranda</a></li>
-                <li><a href="forecast.php">Demand Forecast <span class="sr-only">(current)</span></a></li>
-                <li><a href="stock.php">Stock</a></li>
-                <li><a href="penjadwalan.php">Penjadwalan</a></li>
-                <li class="active"><a href="toko.php">Daftar toko</a></li>
+                <li ><a href="http://localhost/kaukakau/?c=manajer&f=home">Beranda</a></li>
+                <li ><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast">Demand Forecast <span class="sr-only">(current)</span></a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a></li>
+                <li class="active"><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
             </ul>
         </div>
 
@@ -79,39 +79,39 @@
                         <div class="col-4">
                             <div class="list-group" id="list-tab" role="tablist">
                                 <a class="list-group-item list-group-item-action active" id="list-home-list"
-                                   data-toggle="list" href="#list-home" role="tab" aria-controls="home">Daftar Toko dan
-                                    Supplier</a>
-                                <a class="list-group-item list-group-item-action" id="list-profile-list"
-                                   data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Toko A</a>
-                                <a class="list-group-item list-group-item-action" id="list-messages-list"
-                                   data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Toko
-                                    B</a>
-                                <a class="list-group-item list-group-item-action" id="list-settings-list"
-                                   data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Toko
-                                    C</a>
-                            </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="list-home" role="tabpanel"
-                                     aria-labelledby="list-home-list">...
-                                </div>
-                                <div class="tab-pane fade" id="list-profile" role="tabpanel"
-                                     aria-labelledby="list-profile-list">...
-                                </div>
-                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
-                                     aria-labelledby="list-messages-list">...
-                                </div>
-                                <div class="tab-pane fade" id="list-settings" role="tabpanel"
-                                     aria-labelledby="list-settings-list">...
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                                data-toggle="list" href="#list-home" role="tab" aria-controls="home">Daftar Toko dan
+                            Supplier</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list"
+                            data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Toko A</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list"
+                            data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Toko
+                        B</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list"
+                        data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Toko
+                    C</a>
+                </div>
             </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                    aria-labelledby="list-home-list">...
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                aria-labelledby="list-profile-list">...
+            </div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel"
+            aria-labelledby="list-messages-list">...
         </div>
+        <div class="tab-pane fade" id="list-settings" role="tabpanel"
+        aria-labelledby="list-settings-list">...
     </div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
 </div>
 
 <?php include 'konten/elemen/modal.php'; ?>

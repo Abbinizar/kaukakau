@@ -9,10 +9,10 @@
 
     <title>Beranda</title>
 
-    <link href="aset/css/bootstrap.css" rel="stylesheet"/>
+    <link href="aset/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="aset/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="aset/css/font-awesome-animation.css" rel="stylesheet"/>
-    <link href="aset/css/style.css" rel="stylesheet"/>
+    <link href="aset/css/style-custom.css" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -55,14 +55,15 @@
                     <img src="img/logo.png" class="img-circle center-block" width="100" height="100">
                     <h4 class="text-center">Manager</h4>
                 </div>
-                <li class="active"><a href="awal.php">Beranda</a></li>
-                <li><a href="konten/tampilan/forecast.php">Demand Forecast <span class="sr-only">(current)</span></a></li>
-                <li><a href="konten/tampilan/stock.php">Stock</a></li>
-                <li><a href="konten/tampilan/penjadwalan.php">Penjadwalan</a></li>
-                <li><a href="konten/tampilan/toko.php">Daftar toko</a></li>
+                <li class="active"><a href="http://localhost/kaukakau/?c=manajer&f=home">Beranda</a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast">Demand Forecast <span class="sr-only">(current)</span></a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
             </ul>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+        <div class="col-md-10 col-md-offset-2 main">
             <h1 class="page-header">Daftar Toko</h1>
             <div class="row">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_produk">

@@ -9,25 +9,25 @@
 
     <title>Beranda</title>
 
-    <link href="aset/css/bootstrap.css" rel="stylesheet"/>
+    <link href="aset/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="aset/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="aset/css/font-awesome-animation.css" rel="stylesheet"/>
-    <link href="aset/css/style.css" rel="stylesheet"/>
+    <link href="aset/css/style-custom.css" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+<![endif]-->
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -55,11 +55,11 @@
                     <img src="img/logo.png" class="img-circle center-block" width="100" height="100">
                     <h4 class="text-center">Manager</h4>
                 </div>
-                <li><a href="awal.php">Beranda</a></li>
-                <li><a href="forecast.php">Demand Forecast <span class="sr-only">(current)</span></a></li>
-                <li><a href="stock.php">Stock</a></li>
-                <li class="active"><a href="penjadwalan.php">Penjadwalan</a></li>
-                <li><a href="toko.php">Daftar toko</a></li>
+                <li ><a href="http://localhost/kaukakau/?c=manajer&f=home">Beranda</a></li>
+                <li ><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast">Demand Forecast <span class="sr-only">(current)</span></a></li>
+                <li ><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
+                <li class="active"><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -82,41 +82,41 @@
                     <div>
                         <table class="table">
                             <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Tipe Produk</th>
-                                <th scope="col">Lama Produksi</th>
-                                <th scope="col">Mulai Produksi</th>
-                                <th scope="col">Akhir Produksi</th>
-                                ></h1>
-                                <th scope="col">Jumlah</th>
-                            </tr>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Tipe Produk</th>
+                                    <th scope="col">Lama Produksi</th>
+                                    <th scope="col">Mulai Produksi</th>
+                                    <th scope="col">Akhir Produksi</th>
+                                    ></h1>
+                                    <th scope="col">Jumlah</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>XX1</td>
-                                <td>1 bulan</td>
-                                <td>30 april 2018</td>
-                                <td>30 mei 2018</td>
-                                <td>300 pcs</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>XX1</td>
-                                <td>1 bulan</td>
-                                <td>30 april 2018</td>
-                                <td>30 mei 2018</td>
-                                <td>300 pcs</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>XX1</td>
-                                <td>1 bulan</td>
-                                <td>30 april 2018</td>
-                                <td>30 mei 2018</td>
-                                <td>300 pcs</td>
-                            </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>XX1</td>
+                                    <td>1 bulan</td>
+                                    <td>30 april 2018</td>
+                                    <td>30 mei 2018</td>
+                                    <td>300 pcs</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>XX1</td>
+                                    <td>1 bulan</td>
+                                    <td>30 april 2018</td>
+                                    <td>30 mei 2018</td>
+                                    <td>300 pcs</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>XX1</td>
+                                    <td>1 bulan</td>
+                                    <td>30 april 2018</td>
+                                    <td>30 mei 2018</td>
+                                    <td>300 pcs</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

@@ -63,7 +63,7 @@ class model_penjadwalan
                 $output[] = array(
                     'id' => $item['id'],
                     'tipeproduk' => $item['tipeproduk'],
-                    'namaproduk' => $item['namaproduk'],
+                    'namaproduk' => $item['namaproduk']
                 );
             }
             return $output;

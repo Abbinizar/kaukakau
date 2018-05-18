@@ -63,9 +63,11 @@ class manajer_penjadwalan
         );
     }
     public function hapus_Produk()
-    model_penjadwalan::hapusProduk(
-        $_POST['id']
-    );
+    {
+        model_penjadwalan::hapusProduk(
+            $_POST['id']
+        );
+    }
 
 }
 ?>
