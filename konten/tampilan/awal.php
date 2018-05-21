@@ -14,18 +14,19 @@
     <link href="aset/css/font-awesome-animation.css" rel="stylesheet"/>
     <link href="aset/css/style-custom.css" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+<![endif]-->
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -55,36 +56,43 @@
             </div>
             <li class="active"><a href="http://localhost/kaukakau/?c=manajer&f=home">Beranda</a></li>
             <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast">Demand Forecast <span
-                            class="sr-only">(current)</span></a></li>
-            <li><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
-            <li><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a></li>
-            <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
-        </ul>
-    </div>
+                class="sr-only">(current)</span></a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
+            </ul>
+        </div>
 
-    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        <h1 class="page-header">Beranda</h1>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_produk">
-            Tambah
-        </button>
-        <hr>
-        <?php if ($produk != 'kosong') { ?>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Beranda</h1>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_produk">
+                Tambah
+            </button>
+            <hr>
+            <?php if ($produk != 'kosong') { ?>
             <ul class="list-group">
                 <?php foreach ($produk as $item) { ?>
-                    <li class="list-group-item"><?php echo $item['namaproduk']; ?></li>
+                <li class="list-group-item"><?php echo $item['namaproduk']; ?>
+                    <i class="material-icons" style="float: right;">delete</i>
+                    <i class="material-icons" style="float: right;">edit</i>
+                    
+                </li>
+                
                 <?php } ?>
+
+
             </ul>
-        <?php } else { ?>
+            <?php } else { ?>
             <div class="alert alert-info">Tidak Ada Produk Untuk Saat Ini</div>
-        <?php } ?>
+            <?php } ?>
+        </div>
     </div>
-</div>
 
 
-<?php include 'konten/elemen/modal.php'; ?>
+    <?php include 'konten/elemen/modal.php'; ?>
 
-<script src="aset/js/jquery.min.js"></script>
-<script src="aset/js/bootstrap.js"></script>
-<script src="aset/js/custom.js"></script>
+    <script src="aset/js/jquery.min.js"></script>
+    <script src="aset/js/bootstrap.js"></script>
+    <script src="aset/js/custom.js"></script>
 </body>
 </html>

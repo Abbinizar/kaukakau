@@ -14,6 +14,7 @@
     <link href="aset/css/font-awesome-animation.css" rel="stylesheet"/>
     <link href="aset/css/style-custom.css" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -96,8 +97,9 @@
                                     <td><?php echo $item['namaproduk'] ?></td>
                                     <td><?php echo $item['mulai'] ?></td>
                                     <td><?php echo $item['akhir'] ?></td>
-                                    <td><?php echo $item['jumlah'] ?></td>
+                                    <td><?php echo $item['jumlah'] ?></td>                                                  
                                 </tr>
+                                
                             <?php } ?>
                             </tbody>
                         </table>
