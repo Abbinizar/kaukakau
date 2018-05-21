@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Register</title>
+    <title>Login</title>
 
     <link href="aset/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="aset/css/font-awesome.min.css" rel="stylesheet"/>
@@ -26,28 +26,30 @@
     <h1 class="text-center">Masuk</h1>
 </div>
 <div class="container">
-    <form class="form-horizontal" action="http://localhost/kaukakau/?c=kontrol_halaman&f=login" method="post">
-        <div class="form-group">
-            <label for="emailAdress" class="col-sm-2 control-label">Username</label>
-            <?php if (isset($_GET['error'])) { ?>
-                <label for="emailAdress" class="col-sm-2 control-label">Username Salah</label>
-            <?php } ?>
-            <div class="col-sm-9">
-                <input type="text" class="form-control" id="emailAdress" name="username" placeholder="Email or Username">
+    <div class="col-sm-4 col-sm-offset-4">
+        <form class="form-horizontal" action="http://localhost/kaukakau/?c=kontrol_halaman&f=login" method="post">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="input-group">
+                        <label for="emailAdress" class="col-sm-2 control-label">Username</label>
+                        <input type="text" class="form-control" id="emailAdress" name="username"
+                               placeholder="Email or Username">
+                    </div>
+                    <div class="input-group">
+                        <label for="password" class="col-sm-2 control-label">Password</label>
+                        <input type="Password" class="form-control" id="password" name="password"
+                               placeholder="Password">
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="emailAdress" class="col-sm-2 control-label">Password</label>
-            <div class="col-sm-9">
-                <input type="Password" class="form-control" id="emailAdress" name="password" placeholder="Password">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-primary">Login</button>
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
 <script src="aset/js/jquery.min.js"></script>
 <script src="aset/js/bootstrap.js"></script>

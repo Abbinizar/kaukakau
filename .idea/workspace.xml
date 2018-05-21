@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a9af9ca-5843-41e8-85d6-9c2c644c74da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/konten/elemen/modal.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/elemen/modal.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/konten/kontrol/manajer.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/kontrol/manajer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/konten/kontrol/manajer_pemasaran.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/kontrol/manajer_pemasaran.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/konten/kontrol/manajer_penjadwalan.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/kontrol/manajer_penjadwalan.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/konten/kontrol/manajer_stok.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/kontrol/manajer_stok.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/konten/model/model_pemasaran.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/model/model_pemasaran.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/konten/model/model_penjadwalan.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/model/model_penjadwalan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/konten/model/model_stok.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/model/model_stok.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/konten/tampilan/awal.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/tampilan/awal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/konten/tampilan/forecast.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/tampilan/forecast.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/konten/tampilan/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/tampilan/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/konten/tampilan/penjadwalan.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/tampilan/penjadwalan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/konten/tampilan/stock.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/tampilan/stock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/konten/tampilan/toko.php" beforeDir="false" afterPath="$PROJECT_DIR$/konten/tampilan/toko.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/route.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,58 +26,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="manajer_pemasaran.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer_pemasaran.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modal.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/konten/elemen/modal.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
-              <folding>
-                <element signature="e#5740#5747#1#HTML" expanded="true" />
-                <element signature="e#8582#8589#1#HTML" expanded="true" />
-                <element signature="e#11484#11491#1#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manajer_penjadwalan.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer_penjadwalan.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manajer_stok.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer_stok.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manajer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -74,11 +34,28 @@
       <find>['level']</find>
       <find>assets</find>
       <find>&lt;form&gt;</find>
+      <find>tamba</find>
+      <find>form-group</find>
+      <find>tamb</find>
+      <find>form-group row</find>
+      <find>id=&quot;exampleModalLabel&quot;</find>
+      <find>btn-primary</find>
+      <find>btn-secondary</find>
+      <find>btn-prim</find>
+      <find>class=&quot;&quot;</find>
+      <find>tipe pr</find>
+      <find>Tipe Pr</find>
+      <find>barang</find>
+      <find>tipe</find>
+      <find>toko</find>
+      <find>jadwa</find>
     </findStrings>
     <replaceStrings>
       <replace>level</replace>
       <replace>aset</replace>
       <replace>&lt;form action=&quot;&quot; method=&quot;post&quot;&gt;</replace>
+      <replace>input-group</replace>
+      <replace>btn-default</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -94,22 +71,22 @@
         <option value="$PROJECT_DIR$/konten/kontrol/kontrol_halaman.php" />
         <option value="$PROJECT_DIR$/koneksi.php" />
         <option value="$PROJECT_DIR$/logout.php" />
-        <option value="$PROJECT_DIR$/route.php" />
         <option value="$PROJECT_DIR$/konten/tampilan/home.php" />
         <option value="$PROJECT_DIR$/konten/tampilan/login.php" />
+        <option value="$PROJECT_DIR$/route.php" />
+        <option value="$PROJECT_DIR$/konten/kontrol/manajer.php" />
         <option value="$PROJECT_DIR$/konten/tampilan/awal.php" />
-        <option value="$PROJECT_DIR$/konten/tampilan/penjadwalan.php" />
-        <option value="$PROJECT_DIR$/konten/tampilan/stock.php" />
-        <option value="$PROJECT_DIR$/konten/tampilan/toko.php" />
         <option value="$PROJECT_DIR$/konten/tampilan/forecast.php" />
         <option value="$PROJECT_DIR$/konten/model/model_pemasaran.php" />
-        <option value="$PROJECT_DIR$/konten/model/model_penjadwalan.php" />
-        <option value="$PROJECT_DIR$/konten/model/model_stok.php" />
-        <option value="$PROJECT_DIR$/konten/elemen/modal.php" />
-        <option value="$PROJECT_DIR$/konten/kontrol/manajer.php" />
+        <option value="$PROJECT_DIR$/konten/tampilan/toko.php" />
         <option value="$PROJECT_DIR$/konten/kontrol/manajer_pemasaran.php" />
-        <option value="$PROJECT_DIR$/konten/kontrol/manajer_penjadwalan.php" />
+        <option value="$PROJECT_DIR$/konten/tampilan/stock.php" />
+        <option value="$PROJECT_DIR$/konten/model/model_stok.php" />
         <option value="$PROJECT_DIR$/konten/kontrol/manajer_stok.php" />
+        <option value="$PROJECT_DIR$/konten/tampilan/penjadwalan.php" />
+        <option value="$PROJECT_DIR$/konten/model/model_penjadwalan.php" />
+        <option value="$PROJECT_DIR$/konten/elemen/modal.php" />
+        <option value="$PROJECT_DIR$/konten/kontrol/manajer_penjadwalan.php" />
       </list>
     </option>
   </component>
@@ -133,7 +110,54 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="kaukakau" type="cbb8eebc:String" user="kaukakau" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="kaukakau" type="cbb8eebc:String" user="kaukakau" />
+              <item name="konten" type="cbb8eebc:String" user="konten" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="kaukakau" type="cbb8eebc:String" user="kaukakau" />
+              <item name="konten" type="cbb8eebc:String" user="konten" />
+              <item name="kontrol" type="cbb8eebc:String" user="kontrol" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="kaukakau" type="cbb8eebc:String" user="kaukakau" />
+              <item name="konten" type="cbb8eebc:String" user="konten" />
+              <item name="tampilan" type="cbb8eebc:String" user="tampilan" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Default">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="kaukakau" type="cbb8eebc:String" user="kaukakau" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="kaukakau" type="cbb8eebc:String" user="kaukakau" />
+              <item name="konten" type="cbb8eebc:String" user="konten" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="kaukakau" type="cbb8eebc:String" user="kaukakau" />
+              <item name="konten" type="cbb8eebc:String" user="konten" />
+              <item name="tampilan" type="cbb8eebc:String" user="tampilan" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,17 +242,17 @@
       <workItem from="1525697691070" duration="7152000" />
       <workItem from="1525705207953" duration="679000" />
       <workItem from="1525705946042" duration="3277000" />
+      <workItem from="1526821012479" duration="15156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11777000" />
+    <option name="totallyTimeSpent" value="26933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18374817" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -248,6 +272,27 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32935917" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32935917" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -256,6 +301,48 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer_pemasaran.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/elemen/modal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+          <folding>
+            <element signature="e#487#494#1#HTML" expanded="true" />
+            <element signature="e#2328#2335#1#HTML" expanded="true" />
+            <element signature="e#4147#4154#1#HTML" expanded="true" />
+            <element signature="e#6289#6296#1#HTML" expanded="true" />
+            <element signature="e#8173#8180#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer_penjadwalan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer_stok.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/konten/tampilan/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -321,87 +408,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/konten/tampilan/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="40" column="73" selection-start-line="40" selection-start-column="73" selection-end-line="40" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/konten/kontrol/kontrol_halaman.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/konten/tampilan/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="41" column="61" lean-forward="true" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/konten/tampilan/awal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="114" selection-start-line="114" selection-end-line="114" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/konten/tampilan/forecast.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="78" column="43" lean-forward="true" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/konten/tampilan/toko.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="109" column="26" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/konten/tampilan/stock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/konten/tampilan/penjadwalan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="128" column="43" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/konten/model/model_penjadwalan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/konten/model/model_stok.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
@@ -412,50 +422,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/konten/model/model_pemasaran.php">
+    <entry file="file://$PROJECT_DIR$/konten/tampilan/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="180">
+          <caret line="40" column="73" selection-start-line="40" selection-start-column="73" selection-end-line="40" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aset/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/tampilan/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aset/css/style-custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/kontrol/kontrol_halaman.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/tampilan/awal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="73" column="64" selection-start-line="73" selection-start-column="64" selection-end-line="73" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="150">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/tampilan/forecast.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="102" column="24" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer_pemasaran.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="275">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/konten/elemen/modal.php">
+    <entry file="file://$PROJECT_DIR$/konten/model/model_pemasaran.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
-          <folding>
-            <element signature="e#5740#5747#1#HTML" expanded="true" />
-            <element signature="e#8582#8589#1#HTML" expanded="true" />
-            <element signature="e#11484#11491#1#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="331">
+          <caret line="83" column="49" lean-forward="true" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer_penjadwalan.php">
+    <entry file="file://$PROJECT_DIR$/konten/tampilan/toko.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="470">
+          <caret line="95" column="22" lean-forward="true" selection-start-line="72" selection-start-column="12" selection-end-line="95" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer_stok.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        <state relative-caret-position="255">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/model/model_stok.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="49" column="49" lean-forward="true" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/kontrol/manajer_penjadwalan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/tampilan/stock.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/elemen/modal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/model/model_penjadwalan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="60" lean-forward="true" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/konten/tampilan/penjadwalan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="95" column="68" selection-start-line="95" selection-start-column="68" selection-end-line="95" selection-end-column="68" />
         </state>
       </provider>
     </entry>

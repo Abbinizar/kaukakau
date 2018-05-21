@@ -7,14 +7,32 @@ class model_pemasaran
     {
     }
 
+    public static function bacaPenjualanSebelumnya($tanggal)
+    {
+        $db = DB::getInstance();
+        $hasil = $db->query("SELECT jumlahpenjualan, peramalan FROM penjualan WHERE MONTH(tanggal) = MONTH('$tanggal')-1;");
+        if ($hasil->rowCount() > 0) {
+            foreach ($hasil as $item) {
+                $output = array(
+                    'jumlahpenjualan' => $item['jumlahpenjualan'],
+                    'peramalan' => $item['peramalan']
+                );
+            }
+            return $output;
+        } else {
+            return 'kosong';
+        }
+    }
+
     public static function bacaDataPenjualan()
     {
         $db = DB::getInstance();
-        $hasil = $db->query("SELECT * FROM penjualan;");
+        $hasil = $db->query("SELECT p.id, pr.namaproduk, p.tanggal, p.jumlahpenjualan, p.peramalan FROM penjualan p JOIN produk pr ON p.id_produk = pr.id;");
         if ($hasil->rowCount() > 0) {
             foreach ($hasil as $item) {
                 $output[] = array(
                     'id' => $item['id'],
+                    'namaproduk' => $item['namaproduk'],
                     'tanggal' => $item['tanggal'],
                     'jumlahpenjualan' => $item['jumlahpenjualan'],
                     'peramalan' => $item['peramalan']
@@ -26,10 +44,10 @@ class model_pemasaran
         }
     }
 
-    public static function tambahDataPenjualan($tanggal, $nama, $jumlah)
+    public static function tambahDataPenjualan($id_produk, $tanggal, $jumlah, $peramalan)
     {
         $db = DB::getInstance();
-        $status = $db->exec("INSERT INTO penjualan(tanggal, nama, jumlah) VALUES ('$tanggal', '$nama', $jumlah);");
+        $status = $db->exec("INSERT INTO penjualan(id_produk, tanggal, jumlahpenjualan, peramalan) VALUES ($id_produk, '$tanggal', $jumlah, $peramalan);");
         if ($status > 0) {
             return 'sukses';
         } else {
@@ -37,10 +55,10 @@ class model_pemasaran
         }
     }
 
-    public static function perbaruiDataPenjualan($id, $tanggal, $nama, $jumlah)
+    public static function perbaruiDataPenjualan($id, $id_produk, $tanggal, $nama, $jumlah)
     {
         $db = DB::getInstance();
-        $status = $db->exec("UPDATE penjualan set tanggal='$tanggal', nama='$nama', jumlah='$jumlah' WHERE id=$id;");
+        $status = $db->exec("UPDATE penjualan set id_produk=$id_produk, tanggal='$tanggal', nama='$nama', jumlah='$jumlah' WHERE id=$id;");
         if ($status > 0) {
             return 'sukses';
         } else {

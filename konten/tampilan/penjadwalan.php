@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Beranda</title>
+    <title>Penjadwalan</title>
 
     <link href="aset/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="aset/css/font-awesome.min.css" rel="stylesheet"/>
@@ -18,16 +18,16 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
+    <![endif]-->
 </head>
 
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                aria-expanded="false" aria-controls="navbar">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -51,76 +51,60 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
-                <div class=" ">
+                <div class="">
                     <img src="img/logo.png" class="img-circle center-block" width="100" height="100">
                     <h4 class="text-center">Manager</h4>
                 </div>
-                <li ><a href="http://localhost/kaukakau/?c=manajer&f=home">Beranda</a></li>
-                <li ><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast">Demand Forecast <span class="sr-only">(current)</span></a></li>
-                <li ><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
-                <li class="active"><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer&f=home">Beranda</a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast">Demand Forecast <span
+                                class="sr-only">(current)</span></a></li>
+                <li><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
+                <li class="active"><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a>
+                </li>
                 <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1 class="page-header">Penjadwalan Produksi</h1>
-            <div>
-                <div class="row">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_penjadwalan">
-                        Tambah
-                    </button>
-                </div>
-                <form>
-                    <div class="form-group row">
-                        <div class="col-sm-2">
-                            <label for="emailAdress" class="control-label">Tipe Produk</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input type="list-tab" class="form-control" id="judul" placeholder="Tipe" name="Tipe">
-                        </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_penjadwalan">
+                Tambah
+            </button>
+            <hr>
+            <div class="panel">
+                <div class="panel-heading">
+                    <div class="input-group">
+                        <label for="emailAdress" class="control-label">Tipe Produk</label>
+                        <input type="list-tab" class="form-control" id="judul" placeholder="Tipe" name="Tipe">
                     </div>
-                    <div>
+                </div>
+                <div class="panel-body">
+                    <?php if ($data != 'kosong') { ?>
                         <table class="table">
                             <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Tipe Produk</th>
-                                    <th scope="col">Lama Produksi</th>
-                                    <th scope="col">Mulai Produksi</th>
-                                    <th scope="col">Akhir Produksi</th>
-                                    ></h1>
-                                    <th scope="col">Jumlah</th>
-                                </tr>
+                            <tr>
+                                <th scope="col">id</th>
+                                <th scope="col">Nama Produk</th>
+                                <th scope="col">Mulai Produksi</th>
+                                <th scope="col">Lama Produksi</th>
+                                <th scope="col">Jumlah</th>
+                            </tr>
                             </thead>
                             <tbody>
+                            <?php foreach ($data as $item) { ?>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>XX1</td>
-                                    <td>1 bulan</td>
-                                    <td>30 april 2018</td>
-                                    <td>30 mei 2018</td>
-                                    <td>300 pcs</td>
+                                    <td><?php echo $item['id'] ?></td>
+                                    <td><?php echo $item['namaproduk'] ?></td>
+                                    <td><?php echo $item['mulai'] ?></td>
+                                    <td><?php echo $item['akhir'] ?></td>
+                                    <td><?php echo $item['jumlah'] ?></td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>XX1</td>
-                                    <td>1 bulan</td>
-                                    <td>30 april 2018</td>
-                                    <td>30 mei 2018</td>
-                                    <td>300 pcs</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>XX1</td>
-                                    <td>1 bulan</td>
-                                    <td>30 april 2018</td>
-                                    <td>30 mei 2018</td>
-                                    <td>300 pcs</td>
-                                </tr>
+                            <?php } ?>
                             </tbody>
                         </table>
-                    </div>
-                </form>
+                    <?php } else { ?>
+                        <div class="alert alert-info">Tidak Ada Data Jadwal</div>
+                    <?php } ?>
+                </div>
             </div>
         </div>
     </div>

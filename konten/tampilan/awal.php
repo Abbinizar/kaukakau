@@ -20,9 +20,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
-
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -48,64 +46,37 @@
 </nav>
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
-                <div class=" ">
-                    <img src="img/logo.png" class="img-circle center-block" width="100" height="100">
-                    <h4 class="text-center">Manager</h4>
-                </div>
-                <li class="active"><a href="http://localhost/kaukakau/?c=manajer&f=home">Beranda</a></li>
-                <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast">Demand Forecast <span class="sr-only">(current)</span></a></li>
-                <li><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
-                <li><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a></li>
-                <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
-            </ul>
-        </div>
 
-        <div class="col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Daftar Toko</h1>
-            <div class="row">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_produk">
-                    Tambah
-                </button>
+    <div class="col-sm-3 col-md-2 sidebar">
+        <ul class="nav nav-sidebar">
+            <div class=" ">
+                <img src="img/logo.png" class="img-circle center-block" width="100" height="100">
+                <h4 class="text-center">Manager</h4>
             </div>
-            <div>
-                <form>
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="list-group" id="list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action active" id="list-home-list"
-                                   data-toggle="list" href="#list-home" role="tab" aria-controls="home">Daftar
-                                    Produk</a>
-                                <a class="list-group-item list-group-item-action" id="list-profile-list"
-                                   data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Produk
-                                    A</a>
-                                <a class="list-group-item list-group-item-action" id="list-messages-list"
-                                   data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Produk
-                                    B</a>
-                            </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="list-home" role="tabpanel"
-                                     aria-labelledby="list-home-list">...
-                                </div>
-                                <div class="tab-pane fade" id="list-profile" role="tabpanel"
-                                     aria-labelledby="list-profile-list">...
-                                </div>
-                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
-                                     aria-labelledby="list-messages-list">...
-                                </div>
-                                <div class="tab-pane fade" id="list-settings" role="tabpanel"
-                                     aria-labelledby="list-settings-list">...
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+            <li class="active"><a href="http://localhost/kaukakau/?c=manajer&f=home">Beranda</a></li>
+            <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast">Demand Forecast <span
+                            class="sr-only">(current)</span></a></li>
+            <li><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
+            <li><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a></li>
+            <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
+        </ul>
+    </div>
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h1 class="page-header">Beranda</h1>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_produk">
+            Tambah
+        </button>
+        <hr>
+        <?php if ($produk != 'kosong') { ?>
+            <ul class="list-group">
+                <?php foreach ($produk as $item) { ?>
+                    <li class="list-group-item"><?php echo $item['namaproduk']; ?></li>
+                <?php } ?>
+            </ul>
+        <?php } else { ?>
+            <div class="alert alert-info">Tidak Ada Produk Untuk Saat Ini</div>
+        <?php } ?>
     </div>
 </div>
 

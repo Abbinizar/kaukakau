@@ -8,10 +8,11 @@ class manajer
 
     public function home()
     {
+        $produk = model_stok::bacaProduk();
         require_once 'konten/tampilan/awal.php';
-
     }
 
+    /*
     public function manajer(){
         $data = model_stok::bacaStok();
         require_once 'konten/tampilan/stok.php';
@@ -24,6 +25,7 @@ class manajer
         $data = model_penjadwalan::bacaProduk();
         require_once 'konten/tampilan/awal.php';
     }
+    */
 
     /**
      * TODO buat method yang berhubungan dengan manajer

@@ -3,46 +3,34 @@
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Input Data Toko</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="" method="post">
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="nama_toko" class="control-label">Nama Toko</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="nama_toko" placeholder="nama_toko"
-                                   name="nama_toko">
-                        </div>
+            <form action="http://localhost/kaukakau/?c=manajer_pemasaran&f=tambah_toko" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Input Data Toko</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <label for="nama_toko">Nama Toko</label>
+                        <input type="text" class="form-control" id="nama_toko" placeholder="nama_toko"
+                               name="nama_toko">
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="alamat_toko" class="control-label">Alamat toko</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="alamat_toko" placeholder="alamat_toko"
-                                   name="alamat_toko">
-                        </div>
+                    <div class="input-group">
+                        <label for="alamat_toko">Alamat toko</label>
+                        <input type="text" class="form-control" id="alamat_toko" placeholder="alamat_toko"
+                               name="alamat_toko">
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="pemilik" class="control-label">Pemilik</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="pemilik" placeholder="pemilik" name="pemilik">
-                        </div>
+                    <div class="input-group">
+                        <label for="pemilik">Pemilik</label>
+                        <input type="text" class="form-control" id="pemilik" placeholder="pemilik" name="pemilik">
                     </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -53,45 +41,36 @@
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Input Data Toko</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="" method="post">
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="emailAdress" class="control-label">Tanggal</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="date" class="form-control" id="tanggal" placeholder="Nama" name="tanggal">
-                        </div>
+            <form action="http://localhost/kaukakau/?c=manajer_pemasaran&f=tambah_penjualan" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Input Data Toko</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <label for="tanggal">Tanggal</label>
+                        <input type="date" class="form-control" id="tanggal" placeholder="Nama" name="tanggal">
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="emailAdress" class="control-label">Nama barang</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="nama_barang" placeholder="Nama"
-                                   name="nama_barang">
-                        </div>
+                    <div class="input-group">
+                        <label for="nama_produk">Nama produk</label>
+                        <select class="form-control" name="nama_produk" id="nama_produk">
+                            <?php foreach ($produk as $item) { ?>
+                                <option value="<?php echo $item['id']; ?>"><?php echo $item['namaproduk']; ?></option>
+                            <?php } ?>
+                        </select>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="emailAdress" class="control-label">Jumlah penjualan</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="jumlah" placeholder="Jumlah" name="jumlah">
-                        </div>
+                    <div class="input-group">
+                        <label for="jumlah">Jumlah penjualan</label>
+                        <input type="number" class="form-control" id="jumlah" placeholder="Jumlah" name="jumlah">
                     </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -102,54 +81,36 @@
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Input Data Toko</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="" method="post">
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="emailAdress" class="control-label">Tipe Produk</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="tipe_produk" placeholder="Tipe"
-                                   name="tipe_produk">
-                        </div>
+            <form action="http://localhost/kaukakau/?c=manajer_stok&f=tambah_stok" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Input Stok</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <label for="nama_produk">Nama Produk</label>
+                        <select class="form-control" name="nama_produk" id="nama_produk">
+                            <?php foreach ($produk as $item) { ?>
+                                <option value="<?php echo $item['id']; ?>"><?php echo $item['namaproduk']; ?></option>
+                            <?php } ?>
+                        </select>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="emailAdress" class="control-label">Tanggal</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="date" class="form-control" id="tanggal" placeholder="Nama" name="tanggal">
-                        </div>
+                    <div class="input-group">
+                        <label for="tanggal">Tanggal</label>
+                        <input type="date" class="form-control" id="tanggal" placeholder="Nama" name="tanggal">
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="emailAdress" class="control-label">Nama barang</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="nama_barang" placeholder="Nama"
-                                   name="nama_barang">
-                        </div>
+                    <div class="input-group">
+                        <label for="jumlah">Jumlah</label>
+                        <input type="number" class="form-control" id="jumlah" placeholder="Jumlah" name="jumlah">
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="emailAdress" class="control-label">Jumlah penjualan</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="jumlah" placeholder="Jumlah" name="jumlah">
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -160,47 +121,42 @@
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Input Jadwal Produksi</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="" method="post">
-                    
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="emailAdress" class="control-label">Tanggal mulai</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="date" class="form-control" id="tanggal_mulai" placeholder="Nama"
-                                   name="tanggal_mulai">
-                        </div>
+            <form action="http://localhost/kaukakau/?c=manajer_penjadwalan&f=tambah_jadwal" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Input Jadwal Produksi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <label for="nama_produk">Nama Produk</label>
+                        <select class="form-control" name="nama_produk" id="nama_produk">
+                            <?php foreach ($produk as $item) { ?>
+                                <option value="<?php echo $item['id']; ?>"><?php echo $item['namaproduk']; ?></option>
+                            <?php } ?>
+                        </select>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="emailAdress" class="control-label">Tanggal selesai</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="date" class="form-control" id="tanggal_selesai" placeholder="Nama"
-                                   name="tanggal_selesai">
-                        </div>
+                    <div class="input-group">
+                        <label for="tanggal_mulai">Tanggal mulai</label>
+                        <input type="date" class="form-control" id="tanggal_mulai" placeholder="Nama"
+                               name="tanggal_mulai">
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="emailAdress" class="control-label">Jumlah penjualan</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="jumlah" placeholder="Jumlah" name="jumlah">
-                        </div>
+                    <div class="input-group">
+                        <label for="tanggal_selesai">Tanggal selesai</label>
+                        <input type="date" class="form-control" id="tanggal_selesai" placeholder="Nama"
+                               name="tanggal_selesai">
                     </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+                    <div class="input-group">
+                        <label for="jumlah">Jumlah penjualan</label>
+                        <input type="number" class="form-control" id="jumlah" placeholder="Jumlah" name="jumlah">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -211,38 +167,30 @@
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Input Data produk</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="" method="post">
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="Tipe Produk" class="control-label">Tipe Produk</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="tipe_produk" placeholder="Tipe Produk"
-                                   name="tipe_produk">
-                        </div>
+            <form action="http://localhost/kaukakau/?c=manajer_stok&f=tambah_produk" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Input Data produk</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <label for="Tipe Produk">Tipe Produk</label>
+                        <input type="text" class="form-control" id="tipe_produk" placeholder="Tipe Produk"
+                               name="tipe_produk">
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-1">
-                            <label for="Nama Produk" class="control-label">Nama Produk</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="nama_produk" placeholder="Nama Produk"
-                                   name="nama_produk">
-                        </div>
+                    <div class="input-group">
+                        <label for="nama_produk">Nama Produk</label>
+                        <input type="text" class="form-control" id="nama_produk" name="nama_produk"
+                               placeholder="Nama Produk">
                     </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

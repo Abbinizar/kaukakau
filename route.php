@@ -3,6 +3,8 @@ function call($controller, $action)
 {
     require_once('konten/kontrol/' . $controller . '.php');
 
+    require_once 'konten/model/model_stok.php';
+
     switch ($controller) {
         case 'kontrol_halaman':
             require_once 'konten/model/pengguna.php';
@@ -21,7 +23,6 @@ function call($controller, $action)
             $controller = new manajer_penjadwalan();
             break;
         case 'manajer_stok':
-            require_once 'konten/model/model_stok.php';
             $controller = new manajer_stok();
             break;
         default:
