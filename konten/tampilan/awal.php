@@ -75,12 +75,8 @@
                 <li class="list-group-item"><?php echo $item['namaproduk']; ?>
                     <i class="material-icons" style="float: right;">delete</i>
                     <i class="material-icons" style="float: right;">edit</i>
-                    
-                </li>
-                
+                </li>                
                 <?php } ?>
-
-
             </ul>
             <?php } else { ?>
             <div class="alert alert-info">Tidak Ada Produk Untuk Saat Ini</div>

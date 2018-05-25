@@ -84,6 +84,7 @@
                         <tr>
                             <th scope="col">id</th>
                             <th scope="col">Nama Produk</th>
+                            <th scope="col">Tanggal</th>
                             <th scope="col">Penjualan</th>
                             <th scope="col">Peramalan</th>
                         </tr>
@@ -93,6 +94,7 @@
                             <tr>
                                 <td><?php echo $item['id'] ?></td>
                                 <td><?php echo $item['namaproduk'] ?></td>
+                                <td><?php echo $item['tanggal']?></td>
                                 <td><?php echo $item['jumlahpenjualan'] ?></td>
                                 <td><?php echo $item['peramalan'] ?></td>
                             </tr>

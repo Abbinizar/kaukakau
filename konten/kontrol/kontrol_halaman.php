@@ -20,6 +20,8 @@ class kontrol_halaman
     public function login()
     {
         $hasil = pengguna::masuk($_POST['username'], $_POST['password']);
+   
+
         if ($hasil !== null) {
             if ($hasil == 'admin') {
                 //TODO level admin

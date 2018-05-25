@@ -13,10 +13,17 @@ class manajer_stok
 
     public function tambah_stok()
     {
+//        $status = model_pemasaran::tambahDataPenjualan($_POST['peramalan']);
+//        $peramalanstock = ($forecast * 300)
+//        $safetystock = ($peramalanstock*5%)
+
+
         $status = model_stok::tambahStok(
             $_POST['nama_produk'],
             $_POST['tanggal'],
             $_POST['jumlah']
+//            $forecast
+//            $safetystock
         );
         if ($status == 'sukses') {
             header("location:http://localhost/kaukakau/?c=manajer_stok&f=home");
