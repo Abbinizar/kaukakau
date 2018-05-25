@@ -37,6 +37,7 @@ class model_pemasaran
                     'jumlahpenjualan' => $item['jumlahpenjualan'],
                     'peramalan' => $item['peramalan']
                 );
+                $alpha=2;
             }
             return $output;
         } else {

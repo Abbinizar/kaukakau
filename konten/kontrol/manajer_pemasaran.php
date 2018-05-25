@@ -36,6 +36,7 @@ class manajer_pemasaran
         $forecast = ($alpha * $jumlahTerjual) + ((1-$alpha)*$ramalan);
         $peramalan_stock = $forecast * 5;
         $safety_stock = $peramalan_stock * 0.05;    
+        $error = $ramalan - $jumlahTerjual;
 
         $status = model_pemasaran::tambahDataPenjualan(
             $_POST['nama_produk'],
@@ -120,6 +121,11 @@ class manajer_pemasaran
     }
 
     public function detail(){
+        
+
+        $produk = model_stok::bacaProduk();
+        $data = model_pemasaran::bacaDataPenjualan();
+        
         require_once 'konten/tampilan/detailperamalan.php';
     }
 }

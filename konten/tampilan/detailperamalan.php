@@ -18,16 +18,16 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+<![endif]-->
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -57,7 +57,7 @@
                 </div>
                 <li><a href="http://localhost/kaukakau/?c=manajer&f=home">Beranda</a></li>
                 <li class="active"><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast">Demand
-                        Forecast</a></li>
+                Forecast</a></li>
                 <li><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
                 <li><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a></li>
                 <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
@@ -69,29 +69,44 @@
             
             <hr>
             <div class="panel">
-                
+
                 <div class="panel-body">
+                    <?php if ($data != 'kosong') { ?>
                     <table class="table">
                         <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Peramalan</th>
-                            <th scope="col">Error</th>
-                            <th scope="col">E</th>
-                            <th scope="col">M</th>
-                            <th scope="col">Alpha</th>
-                            <th scope="col">Plus Alpha</th>
-                            <th scope="col">Min Alpha</th>
-                            <th scope="col">PE</th>
-                            <th scope="col">MAPE</th>
-                        </tr>
+                            <tr>
+                                <th scope="col">Peramalan</th>
+                                <th scope="col">Error</th>
+                                <th scope="col">E</th>
+                                <th scope="col">M</th>
+                                <th scope="col">Alpha</th>
+                                <th scope="col">Plus Alpha</th>
+                                <th scope="col">Min Alpha</th>
+                                <th scope="col">PE</th>
+                                <th scope="col">MAPE</th>
+                            </tr>
                         </thead>
                         <tbody>
-
+                            <?php foreach ($data as $item) { ?>
+                            <tr>
+                                <td><?php echo $item['peramalan'] ?></td>
+                                <td><?php echo "" ?></td>
+                                <td><?php echo "" ?></td>
+                                <td><?php echo "" ?></td>
+                                <td><?php echo "0.3" ?></td>
+                                <td><?php echo "0.2" ?></td>
+                                <td><?php echo "0.2" ?></td>
+                                <td><?php echo "" ?></td>
+                                <td><?php echo "88.75%" ?></td>
+                                
+                            </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
-                        <div class="alert alert-info">Tidak Ada Data Details</div>
+                    <?php } else { ?>
+                    <div class="alert alert-info">Tidak Ada Data Penjualan</div>
+                    <?php } ?>
                 </div>
-            
             </div>
         </div>
 
