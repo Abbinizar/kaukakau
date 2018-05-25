@@ -30,8 +30,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="#" style="max-width: 150px; height: auto;
-        width: 70%;"></a>
+            <a class="navbar-brand" href="#"> KAUKAKAU</a>
+            <!-- <img src="#" style="max-width: 150px; height: auto;
+                    width: 70%;"> -->
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -56,7 +57,7 @@
                 <span class="head-main">KAUKAKAU</span>
                 <h2 class="head-sub-main">Chocolate</h2>
                 <h3 class="head-last">kuy makan coklat</h3>
-                <a href="register.html" class="btn btn-danger btn-lg head-btn-one">Get Started</a>
+                <a href="http://localhost/kaukakau/?c=kontrol_halaman&f=login_page" class="btn btn-danger btn-lg head-btn-one">Get Started</a>
             </div>
         </div>
     </div>

@@ -39,7 +39,7 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Profil</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="http://localhost/kaukakau/?c=kontrol_halaman&f=logout">Logout</a></li>
             </ul>
             <form class="navbar-form navbar-right">
                 <input type="text" class="form-control" placeholder="Search...">
@@ -100,7 +100,7 @@
                                     <td><?php echo $item['jumlah'] ?></td>
                                     <td>
                                     <a href="?c=manajer_pemasaran&f=editdata&id=<?php echo $item['id'] ?>" class="btn btn-primary" data-toggle="modal" data-target="#edit" > Edit</a>
-                                    <a href="?c=manajer_pemasaran&f=hapus_penjualan&id=<?php echo $item['id']; ?>" class="btn btn-danger" > Delete</a>
+                                    <a href="?c=manajer_penjadwalan&f=hapus_jadwal&id=<?php echo $item['id']; ?>" class="btn btn-danger" > Delete</a>
                                     </td>                                                  
                                 </tr>
                                 

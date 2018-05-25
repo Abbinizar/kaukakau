@@ -69,10 +69,10 @@ class model_pemasaran
 
     }
 
-    public static function perbaruiDataPenjualan($id, $namaproduk, $tanggal, $jumlah)
+    public static function perbaruiDataPenjualan($id, $tanggal, $namaproduk, $jumlah)
     {
         $db = DB::getInstance();
-        $status = $db->exec("UPDATE penjualan set id=$id, namaproduk='$namaproduk', tanggal='$tanggal', jumlah='$jumlah' WHERE id=$id;");
+        $status = $db->exec("UPDATE penjualan set id=$id,  tanggal='$tanggal',namaproduk='$namaproduk', jumlah='$jumlah' WHERE id=$id;");
         if ($status > 0) {
             return 'sukses';
         } else {
@@ -80,7 +80,7 @@ class model_pemasaran
         }
     }
 
-    public static function editdata($id)
+    public static function editdata()
     {
        $db = DB::getInstance();
        $hasil = $db->query("SELECT p.id, pr.namaproduk, p.tanggal, p.jumlahpenjualan, p.peramalan FROM penjualan p JOIN produk pr ON p.id_produk = pr.id WHERE p.id=$id;");

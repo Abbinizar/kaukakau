@@ -42,6 +42,7 @@ class manajer_penjadwalan
         model_penjadwalan::hapusJadwal(
             $_GET['id']
         );
+        header("location:http://localhost/kaukakau/?c=manajer_penjadwalan&f=home");
     }
 
 }
