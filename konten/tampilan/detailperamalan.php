@@ -71,7 +71,6 @@
             <div class="panel">
                 
                 <div class="panel-body">
-                    <?php if ($data != 'kosong') { ?>
                     <table class="table">
                         <thead class="thead-dark">
                         <tr>
@@ -87,16 +86,10 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <?php foreach ($data as $item) { ?>
-                            <tr>
-                                <td><?php echo $item['peramalan'] ?></td>
-                            </tr>
-                        <?php } ?>
+
                         </tbody>
                     </table>
-                    <?php } else { ?>
-                        <div class="alert alert-info">Tidak Ada Data Penjualan</div>
-                    <?php } ?>
+                        <div class="alert alert-info">Tidak Ada Data Details</div>
                 </div>
             
             </div>

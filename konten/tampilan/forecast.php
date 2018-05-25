@@ -99,6 +99,10 @@
                                 <td><?php echo $item['tanggal']?></td>
                                 <td><?php echo $item['jumlahpenjualan'] ?></td>
                                 <td><?php echo $item['peramalan'] ?></td>
+                                <td>
+                                    <a href="?c=manajer_pemasaran&f=editdata&id=<?php echo $item['id'] ?>" class="btn btn-primary" data-toggle="modal" data-target="#edit" > Edit</a>
+                                    <a href="?c=manajer_pemasaran&f=hapus_penjualan&id=<?php echo $item['id']; ?>" class="btn btn-danger" > Delete</a>
+                                </td>
 
                             </tr>
                             <?php } ?>
@@ -109,10 +113,9 @@
                     <?php } ?>
                 </div>
                 <div class="panel-footer">
-                    <button type="button" class="btn btn-primary"> Edit</button>
-                    <button type="button" class="btn btn-danger"> Delete</button>
 
-                    <button style="float: right;" type="button" class="btn btn-primary" href="http://localhost/kaukakau/?c=manajer_pemasaran&f=detail" > Detail</button>
+
+                    <a style="float: right;" type="button" class="btn btn-primary" href="http://localhost/kaukakau/?c=manajer_pemasaran&f=detail" > Detail</a>
                 </div>
             </div>
         </div>

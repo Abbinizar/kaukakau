@@ -46,7 +46,7 @@ class manajer_stok
     public function hapus_stok()
     {
         model_stok::hapusStok(
-        $_POST['id']
+            $_POST['id']
         );
     }
 
@@ -70,6 +70,11 @@ class manajer_stok
 
     public function hapus_produk()
     {
+        model_stok::hapusProduk(
+            $_GET['id']
+        );
+        header("location: http://localhost/kaukakau/?c=manajer&f=home");
+
 
     }
 }

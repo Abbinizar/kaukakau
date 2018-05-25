@@ -15,12 +15,12 @@ class manajer_penjadwalan
     {
         $status = model_penjadwalan::tambahJadwal(
             $_POST['nama_produk'],
-            $_POST['mulai'],
-            $_POST['akhir'],
+            $_POST['tanggal_mulai'],
+            $_POST['tanggal_selesai'],
             $_POST['jumlah']
         );
         if ($status == 'sukses') {
-            header("location:http://http://localhost/kaukakau/?c=manajer_penjadwalan&f=home");
+            header("location:http://localhost/kaukakau/?c=manajer_penjadwalan&f=home");
         } else {
             echo 'error';
         }
@@ -31,8 +31,8 @@ class manajer_penjadwalan
         model_penjadwalan::perbaruiJadwal(
             $_POST['id'],
             $_POST['nama_produk'],
-            $_POST['mulai'],
-            $_POST['akhir'],
+            $_POST['tanggal_mulai'],
+            $_POST['tanggal_selesai'],
             $_POST['jumlah']
         );
     }

@@ -97,7 +97,11 @@
                                     <td><?php echo $item['namaproduk'] ?></td>
                                     <td><?php echo $item['mulai'] ?></td>
                                     <td><?php echo $item['akhir'] ?></td>
-                                    <td><?php echo $item['jumlah'] ?></td>                                                  
+                                    <td><?php echo $item['jumlah'] ?></td>
+                                    <td>
+                                    <a href="?c=manajer_pemasaran&f=editdata&id=<?php echo $item['id'] ?>" class="btn btn-primary" data-toggle="modal" data-target="#edit" > Edit</a>
+                                    <a href="?c=manajer_pemasaran&f=hapus_penjualan&id=<?php echo $item['id']; ?>" class="btn btn-danger" > Delete</a>
+                                    </td>                                                  
                                 </tr>
                                 
                                 <?php } ?>
@@ -106,10 +110,6 @@
                         <?php } else { ?>
                         <div class="alert alert-info">Tidak Ada Data Jadwal</div>
                         <?php } ?>
-                    </div>
-                    <div class="panel-footer">
-                        <a class="btn btn-primary">Edit</a>
-                        <a class="btn btn-danger">Delete</a>
                     </div>
                 </div>
             </div>

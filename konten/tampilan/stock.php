@@ -66,9 +66,7 @@
 
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h1 class="page-header">Tabel Ketersediaan barang</h1>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_stock">
-                    Tambah
-                </button>
+<!--                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_stock">Tambah</button> -->
                 <hr>
                 <div class="panel">
                     <div class="panel-heading">
@@ -85,8 +83,7 @@
                                     <th scope="col">id</th>
                                     <th scope="col">Nama Produk</th>
                                     <th scope="col">Tanggal</th>
-                                    <th scope="col">Jumlah Stok</th>
-                                    <th scope="col">Peramalan</th>
+                                    <th scope="col">Peramalan Stock</th>
                                     <th scope="col">Safety Stock</th>
                                 </tr>
                             </thead>
@@ -97,9 +94,12 @@
 
                                     <td><?php echo $item['namaproduk'] ?></td>
                                     <td><?php echo $item['tanggal'] ?></td>
-                                    <td><?php echo $item['jumlah_stock'] ?></td>
-                                    <td><?php echo $item['peramalan'] ?></td>
+                                    <td><?php echo $item['peramalan_stock']."  Buah" ?> </td>
                                     <td><?php echo $item['safety_stock'] ?></td>
+                                    <td>
+                                    <a href="?c=manajer_pemasaran&f=editdata&id=<?php echo $item['id'] ?>" class="btn btn-primary" data-toggle="modal" data-target="#edit" > Edit</a>
+                                    <a href="?c=manajer_pemasaran&f=hapus_penjualan&id=<?php echo $item['id']; ?>" class="btn btn-danger" > Delete</a>
+                                </td>
                                 </tr>
                                 <?php } ?>
                             </tbody>
@@ -108,10 +108,6 @@
                         <?php } else { ?>
                         <div class="alert alert-info">Tidak Ada Data Stok</div>
                         <?php } ?>
-                    </div>
-                    <div class="panel-footer">
-                        <a class="btn btn-primary">Edit</a>
-                        <a class="btn btn-danger">Delete</a>
                     </div>
                 </div>
             </div>

@@ -64,44 +64,53 @@
                 </ul>
             </div>
 
+
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
                 <h1 class="page-header">Daftar Toko</h1>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_toko">
                     Tambah
                 </button>
                 <hr>
-                <?php if ($data != 'kosong') { ?>
-                <table class="table">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">id</th>
-                            <th scope="col">Nama Toko</th>
-                            <th scope="col">Alamat</th>
-                            <th scope="col">Pemilik</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($data as $item) { ?>
-                        <tr>
-                            <td><?php echo $item['id'] ?></td>
-                            <td><?php echo $item['namatoko'] ?></td>
-                            <td><?php echo $item['alamat'] ?></td>
-                            <td><?php echo $item['pemilik'] ?></td>
-                        </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-                <?php } else { ?>
-                <div class="alert alert-info">Tidak Ada Data Toko</div>
-                <?php } ?>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="panel-body">
+                            <?php if ($data != 'kosong') { ?>
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">id</th>
+                                        <th scope="col">Nama Toko</th>
+                                        <th scope="col">Alamat</th>
+                                        <th scope="col">Pemilik</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($data as $item) { ?>
+                                    <tr>
+                                        <td><?php echo $item['id'] ?></td>
+                                        <td><?php echo $item['namatoko'] ?></td>
+                                        <td><?php echo $item['alamat'] ?></td>
+                                        <td><?php echo $item['pemilik'] ?></td>
+                                    </tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
+                            <?php } else { ?>
+                            <div class="alert alert-info">Tidak Ada Data Toko</div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
+</div>
+<?php include 'konten/elemen/modal.php'; ?>
 
-    <?php include 'konten/elemen/modal.php'; ?>
-
-    <script src="aset/js/jquery.min.js"></script>
-    <script src="aset/js/bootstrap.js"></script>
-    <script src="aset/js/custom.js"></script>
+<script src="aset/js/jquery.min.js"></script>
+<script src="aset/js/bootstrap.js"></script>
+<script src="aset/js/custom.js"></script>
 </body>
 </html>

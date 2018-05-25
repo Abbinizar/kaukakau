@@ -34,7 +34,8 @@ class manajer_pemasaran
         $beta = 0.2;
         $adaptive = 0.2;
         $forecast = ($alpha * $jumlahTerjual) + ((1-$alpha)*$ramalan);
-
+        $peramalan_stock = $forecast * 10;
+        $safety_stock = $peramalan_stock * 0.05;    
 
         $status = model_pemasaran::tambahDataPenjualan(
             $_POST['nama_produk'],
@@ -42,30 +43,49 @@ class manajer_pemasaran
             $_POST['jumlah'],
             $forecast
         );
+        $status2 = model_pemasaran::tambahStock(
+          $_POST['nama_produk'],
+          $_POST['tanggal'],
+          round($peramalan_stock),
+          round($safety_stock)
+      );
+
         if ($status == 'sukses') {
             header("location:http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast");
         } else {
             echo 'error';
         }
+    }
 
+    public function bacaStock()
+    {
 
     }
 
     public function update_penjualan()
     {
-//        model_pemasaran::perbaruiDataPenjualan(
-//            $_POST['id'],
-//            $_POST['tanggal'],
-//            $_POST['nama_produk'],
-//            $_POST['jumlah']
-//        );
+        model_pemasaran::perbaruiDataPenjualan(
+            $_GET['id'],
+            $_GET['namaproduk'],
+            $_GET['tanggal'],
+            $_GET['jumlah']
+        );
+    }
+
+    public function editdata()
+    {
+        model_pemasaran::editdata(
+            $_GET['id']
+
+        );
     }
 
     public function hapus_penjualan()
     {
         model_pemasaran::hapusDataPenjualan(
-            $_POST['id']
+            $_GET['id']
         );
+        header("location:http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast");
     }
     
     public function tambah_toko()

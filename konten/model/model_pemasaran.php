@@ -43,6 +43,18 @@ class model_pemasaran
             return 'kosong';
         }
     }
+    public static function tambahStock($id_produk, $tanggal, $peramalan_stock, $safety_stock)
+    {
+        $db = DB::getInstance();
+        $status = $db->exec("INSERT INTO stock(id_produk, tanggal, peramalan_stock, safety_stock) VALUES ($id_produk, '$tanggal', $peramalan_stock, $safety_stock);");
+        if ($status > 0) {
+            return 'sukses';
+        } else {
+            return 'gagal';
+        }
+
+
+    }
 
     public static function tambahDataPenjualan($id_produk, $tanggal, $jumlah, $peramalan)
     {
@@ -53,47 +65,14 @@ class model_pemasaran
         } else {
             return 'gagal';
         }
+
+
     }
 
-    public static function perbaruiDataPenjualan($id, $id_produk, $tanggal, $nama, $jumlah)
+    public static function perbaruiDataPenjualan($id, $namaproduk, $tanggal, $jumlah)
     {
         $db = DB::getInstance();
-        $status = $db->exec("UPDATE penjualan set id_produk=$id_produk, tanggal='$tanggal', nama='$nama', jumlah='$jumlah' WHERE id=$id;");
-        if ($status > 0) {
-            return 'sukses';
-        } else {
-            return 'gagal';
-        }
-    }
-    public static function hapusDataPenjualan($id)
-    {
-        $db = DB::getInstance();
-        $db->query("DELETE FROM penjualan WHERE id = $id");
-    } 
-
-    public static function bacaDataToko()
-    {
-        $db = DB::getInstance();
-        $hasil = $db->query("SELECT * FROM toko;");
-        if ($hasil->rowCount() > 0) {
-            foreach ($hasil as $item) {
-                $output[] = array(
-                    'id' => $item['id'],
-                    'namatoko' => $item['namatoko'],
-                    'alamat' => $item['alamat'],
-                    'pemilik' => $item['pemilik']
-                );
-            }
-            return $output;
-        } else {
-            return 'kosong';
-        }
-    }
-
-    public static function tambahDataToko($namatoko, $alamat, $pemilik)
-    {
-        $db = DB::getInstance();
-        $status = $db->exec("INSERT INTO toko (namatoko, alamat, pemilik) VALUES ('$namatoko', '$alamat', '$pemilik');");
+        $status = $db->exec("UPDATE penjualan set id=$id, namaproduk='$namaproduk', tanggal='$tanggal', jumlah='$jumlah' WHERE id=$id;");
         if ($status > 0) {
             return 'sukses';
         } else {
@@ -101,25 +80,82 @@ class model_pemasaran
         }
     }
 
-    public static function perbaruiDataToko($id, $namatoko, $alamat, $pemilik)
+    public static function editdata($id)
     {
-        $db = DB::getInstance();
-        $status = $db->exec("UPDATE toko set namatoko='$namatoko', alamat='$alamat', pemilik='$pemilik' WHERE id=$id;");
-        if ($status > 0) {
-            return 'sukses';
-        } else {
-            return 'gagal';
+       $db = DB::getInstance();
+       $hasil = $db->query("SELECT p.id, pr.namaproduk, p.tanggal, p.jumlahpenjualan, p.peramalan FROM penjualan p JOIN produk pr ON p.id_produk = pr.id WHERE p.id=$id;");
+       if ($hasil->rowCount() > 0) {
+        foreach ($hasil as $item) {
+            $output[] = array(
+                'id' => $item['id'],
+                'namaproduk' => $item['namaproduk'],
+                'tanggal' => $item['tanggal'],
+                'jumlahpenjualan' => $item['jumlahpenjualan'],
+                'peramalan' => $item['peramalan']
+            );
         }
+        return $output;
+    } else {
+        return 'kosong';
     }
-    public static function hapusDataToko($id)
-    {
-        $db = DB::getInstance();
-        $db->query("DELETE FROM toko WHERE id = $id");
-    } 
 
-    public static function detail(){
-        
+}
+
+public static function hapusDataPenjualan($id)
+{
+    $db = DB::getInstance();
+    $db->query("DELETE FROM penjualan WHERE id = $id");
+} 
+
+public static function bacaDataToko()
+{
+    $db = DB::getInstance();
+    $hasil = $db->query("SELECT * FROM toko;");
+    if ($hasil->rowCount() > 0) {
+        foreach ($hasil as $item) {
+            $output[] = array(
+                'id' => $item['id'],
+                'namatoko' => $item['namatoko'],
+                'alamat' => $item['alamat'],
+                'pemilik' => $item['pemilik']
+            );
+        }
+        return $output;
+    } else {
+        return 'kosong';
     }
+}
+
+public static function tambahDataToko($namatoko, $alamat, $pemilik)
+{
+    $db = DB::getInstance();
+    $status = $db->exec("INSERT INTO toko (namatoko, alamat, pemilik) VALUES ('$namatoko', '$alamat', '$pemilik');");
+    if ($status > 0) {
+        return 'sukses';
+    } else {
+        return 'gagal';
+    }
+}
+
+public static function perbaruiDataToko($id, $namatoko, $alamat, $pemilik)
+{
+    $db = DB::getInstance();
+    $status = $db->exec("UPDATE toko set namatoko='$namatoko', alamat='$alamat', pemilik='$pemilik' WHERE id=$id;");
+    if ($status > 0) {
+        return 'sukses';
+    } else {
+        return 'gagal';
+    }
+}
+public static function hapusDataToko($id)
+{
+    $db = DB::getInstance();
+    $db->query("DELETE FROM toko WHERE id = $id");
+} 
+
+public static function detail(){
+
+}
 
 }
 ?>

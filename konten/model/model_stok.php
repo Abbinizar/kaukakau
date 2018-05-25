@@ -11,15 +11,14 @@ class model_stok
     public static function bacaStok()
     {
         $db = DB::getInstance();
-        $hasil = $db->query("SELECT s.id, p.namaproduk, s.tanggal, s.jumlah_stock, s.peramalan, s.safety_stock FROM stock s JOIN produk p ON s.id_produk = p.id;");
+        $hasil = $db->query("SELECT s.id, p.namaproduk, s.tanggal, s.peramalan_stock, s.safety_stock FROM stock s JOIN produk p ON s.id_produk = p.id;");
         if ($hasil->rowCount() > 0) {
             foreach ($hasil as $item) {
                 $output[] = array(
                     'id' => $item['id'],
                     'namaproduk' => $item['namaproduk'],
                     'tanggal' => $item['tanggal'],
-                    'jumlah_stock' => $item['jumlah_stock'],
-                    'peramalan' => $item['peramalan'],
+                    'peramalan_stock' => $item['peramalan_stock'],
                     'safety_stock' => $item['safety_stock']
                 );
             }
@@ -45,6 +44,12 @@ class model_stok
         } else {
             return 'kosong';
         }
+    }
+
+    public static function hapusProduk($id)
+    {
+        $db = DB::getInstance();
+        $db->query("DELETE FROM produk WHERE id =$id");
     }
 
     public static function tambahStok($id_produk, $tanggal, $jumlah_stock)

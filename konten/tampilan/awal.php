@@ -74,16 +74,17 @@
                 <?php foreach ($produk as $item) { ?>
 
                 <li class="list-group-item"><?php echo $item['namaproduk']; ?>
-                    <input type="checkbox" class="custom-control-input" id="customCheck1" style="float: left">
+                    <td>
+                        <a href="?c=manajer_stok&f=hapus_produk&id=<?php echo $item['id']; ?>"  class="btn btn-danger" style="float: right;"> Delete</a>
+                        <a href="?c=manajer_pemasaran&f=editdata&id=<?php echo $item['id'] ?>" class="btn btn-primary" data-toggle="modal" data-target="#edit" style="float: right;"> Edit</a>
+                    </td>
                 </li>                
                 <?php } ?>
             </ul>
             <?php } else { ?>
             <div class="alert alert-info">Tidak Ada Produk Untuk Saat Ini</div>
             <?php } ?>
-            <button type="button" class="btn btn-primary"> Edit</button>
-            <button type="button" class="btn btn-danger"> Delete</button>
-
+            
         </div>
 
     </div>
