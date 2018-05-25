@@ -19,16 +19,16 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+<![endif]-->
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -58,40 +58,40 @@
                 </div>
                 <li><a href="http://localhost/kaukakau/?c=manajer&f=home">Beranda</a></li>
                 <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast">Demand Forecast <span
-                                class="sr-only">(current)</span></a></li>
-                <li><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
-                <li class="active"><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a>
-                </li>
-                <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Penjadwalan Produksi</h1>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_penjadwalan">
-                Tambah
-            </button>
-            <hr>
-            <div class="panel">
-                <div class="panel-heading">
-                    <div class="input-group">
-                        <label for="emailAdress" class="control-label">Tipe Produk</label>
-                        <input type="list-tab" class="form-control" id="judul" placeholder="Tipe" name="Tipe">
+                    class="sr-only">(current)</span></a></li>
+                    <li><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
+                    <li class="active"><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a>
+                    </li>
+                    <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header">Penjadwalan Produksi</h1>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_penjadwalan">
+                    Tambah
+                </button>
+                <hr>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="input-group">
+                            <label for="emailAdress" class="control-label">Tipe Produk</label>
+                            <input type="list-tab" class="form-control" id="judul" placeholder="Tipe" name="Tipe">
+                        </div>
                     </div>
-                </div>
-                <div class="panel-body">
-                    <?php if ($data != 'kosong') { ?>
+                    <div class="panel-body">
+                        <?php if ($data != 'kosong') { ?>
                         <table class="table">
                             <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">id</th>
-                                <th scope="col">Nama Produk</th>
-                                <th scope="col">Mulai Produksi</th>
-                                <th scope="col">Lama Produksi</th>
-                                <th scope="col">Jumlah</th>
-                            </tr>
+                                <tr>
+                                    <th scope="col">id</th>
+                                    <th scope="col">Nama Produk</th>
+                                    <th scope="col">Mulai Produksi</th>
+                                    <th scope="col">Lama Produksi</th>
+                                    <th scope="col">Jumlah</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <?php foreach ($data as $item) { ?>
+                                <?php foreach ($data as $item) { ?>
                                 <tr>
                                     <td><?php echo $item['id'] ?></td>
                                     <td><?php echo $item['namaproduk'] ?></td>
@@ -100,22 +100,26 @@
                                     <td><?php echo $item['jumlah'] ?></td>                                                  
                                 </tr>
                                 
-                            <?php } ?>
+                                <?php } ?>
                             </tbody>
                         </table>
-                    <?php } else { ?>
+                        <?php } else { ?>
                         <div class="alert alert-info">Tidak Ada Data Jadwal</div>
-                    <?php } ?>
+                        <?php } ?>
+                    </div>
+                    <div class="panel-footer">
+                        <a class="btn btn-primary">Edit</a>
+                        <a class="btn btn-danger">Delete</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<?php include 'konten/elemen/modal.php'; ?>
+    <?php include 'konten/elemen/modal.php'; ?>
 
-<script src="aset/js/jquery.min.js"></script>
-<script src="aset/js/bootstrap.js"></script>
-<script src="aset/js/custom.js"></script>
+    <script src="aset/js/jquery.min.js"></script>
+    <script src="aset/js/bootstrap.js"></script>
+    <script src="aset/js/custom.js"></script>
 </body>
 </html>

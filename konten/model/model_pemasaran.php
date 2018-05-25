@@ -117,5 +117,9 @@ class model_pemasaran
         $db->query("DELETE FROM toko WHERE id = $id");
     } 
 
+    public static function detail(){
+        
+    }
+
 }
 ?>

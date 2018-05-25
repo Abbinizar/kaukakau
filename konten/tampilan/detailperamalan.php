@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Forecast</title>
+    <title>Details</title>
 
     <link href="aset/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="aset/css/font-awesome.min.css" rel="stylesheet"/>
@@ -18,16 +18,16 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
+    <![endif]-->
 </head>
 
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                aria-expanded="false" aria-controls="navbar">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -57,7 +57,7 @@
                 </div>
                 <li><a href="http://localhost/kaukakau/?c=manajer&f=home">Beranda</a></li>
                 <li class="active"><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast">Demand
-                Forecast</a></li>
+                        Forecast</a></li>
                 <li><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
                 <li><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a></li>
                 <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
@@ -65,55 +65,40 @@
         </div>
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Peramalan</h1>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_penjualan">
-                Tambah
-            </button>
+            <h1 class="page-header">Detail Peramalan</h1>
+            
             <hr>
             <div class="panel">
-                <div class="panel-heading">
-                    <div class="input-group">
-                        <label for="emailAdress">Tanggal</label>
-                        <input type="month" class="form-control" id="judul" placeholder="Tipe" name="Tipe">
-                    </div>
-                </div>
+                
                 <div class="panel-body">
                     <?php if ($data != 'kosong') { ?>
                     <table class="table">
                         <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">id</th>
-                                <th scope="col">Nama Produk</th>
-                                <th scope="col">Tanggal</th>
-                                <th scope="col">Penjualan</th>
-                                <th scope="col">Peramalan</th>
-
-                            </tr>
-
+                        <tr>
+                            <th scope="col">Peramalan</th>
+                            <th scope="col">Error</th>
+                            <th scope="col">E</th>
+                            <th scope="col">M</th>
+                            <th scope="col">Alpha</th>
+                            <th scope="col">Plus Alpha</th>
+                            <th scope="col">Min Alpha</th>
+                            <th scope="col">PE</th>
+                            <th scope="col">MAPE</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($data as $item) { ?>
+                        <?php foreach ($data as $item) { ?>
                             <tr>
-                                <td><?php echo $item['id'] ?></td>
-                                <td><?php echo $item['namaproduk'] ?></td>
-                                <td><?php echo $item['tanggal']?></td>
-                                <td><?php echo $item['jumlahpenjualan'] ?></td>
                                 <td><?php echo $item['peramalan'] ?></td>
-
                             </tr>
-                            <?php } ?>
+                        <?php } ?>
                         </tbody>
                     </table>
                     <?php } else { ?>
-                    <div class="alert alert-info">Tidak Ada Data Penjualan</div>
+                        <div class="alert alert-info">Tidak Ada Data Penjualan</div>
                     <?php } ?>
                 </div>
-                <div class="panel-footer">
-                    <button type="button" class="btn btn-primary"> Edit</button>
-                    <button type="button" class="btn btn-danger"> Delete</button>
-
-                    <button style="float: right;" type="button" class="btn btn-primary" href="http://localhost/kaukakau/?c=manajer_pemasaran&f=detail" > Detail</button>
-                </div>
+            
             </div>
         </div>
 

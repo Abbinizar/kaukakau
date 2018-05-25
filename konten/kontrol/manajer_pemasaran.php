@@ -98,5 +98,9 @@ class manajer_pemasaran
         );
 
     }
+
+    public function detail(){
+        require_once 'konten/tampilan/detailperamalan.php';
+    }
 }
 ?>

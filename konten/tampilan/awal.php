@@ -72,16 +72,20 @@
             <?php if ($produk != 'kosong') { ?>
             <ul class="list-group">
                 <?php foreach ($produk as $item) { ?>
+
                 <li class="list-group-item"><?php echo $item['namaproduk']; ?>
-                    <i class="material-icons" style="float: right;">delete</i>
-                    <i class="material-icons" style="float: right;">edit</i>
+                    <input type="checkbox" class="custom-control-input" id="customCheck1" style="float: left">
                 </li>                
                 <?php } ?>
             </ul>
             <?php } else { ?>
             <div class="alert alert-info">Tidak Ada Produk Untuk Saat Ini</div>
             <?php } ?>
+            <button type="button" class="btn btn-primary"> Edit</button>
+            <button type="button" class="btn btn-danger"> Delete</button>
+
         </div>
+
     </div>
 
 

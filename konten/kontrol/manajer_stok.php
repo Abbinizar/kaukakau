@@ -10,6 +10,9 @@ class manajer_stok
         $data = model_stok::bacaStok();
         require_once 'konten/tampilan/stock.php';
     }
+    public function forecaststock(){
+
+    }
 
     public function tambah_stok()
     {
