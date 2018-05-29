@@ -90,7 +90,7 @@
                             <?php foreach ($data as $item) { ?>
                             <tr>
                                 <td><?php echo $item['peramalan'] ?></td>
-                                <td><?php echo "" ?></td>
+                                <td><?php echo $error ?></td>
                                 <td><?php echo "" ?></td>
                                 <td><?php echo "" ?></td>
                                 <td><?php echo "0.3" ?></td>
@@ -109,6 +109,8 @@
                 </div>
             </div>
         </div>
+
+        
 
     </div>
 </div>
