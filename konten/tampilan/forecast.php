@@ -115,7 +115,7 @@
                 <div class="panel-footer">
 
 
-                    <a style="float: right;" type="button" class="btn btn-primary" href="http://localhost/kaukakau/?c=manajer_pemasaran&f=detail" > Detail</a>
+                    <a style="float: right;" type="button" class="btn btn-primary" href="http://localhost/kaukakau/?c=manajer_pemasaran&f=details" > Detail</a>
                 </div>
             </div>
         </div>

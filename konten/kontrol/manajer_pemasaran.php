@@ -41,6 +41,9 @@ class manajer_pemasaran
         $error = $ramalan - $jumlahTerjual;
         $akhir = 30;
         $error = $jumlahTerjual - $forecast;
+        $e = ($beta*$error+(1-$beta)*0);
+        $m = ($beta*$error+(1-$beta)*0);
+        $mape = ((($jumlahTerjual-$forecast)/$jumlahTerjual)*100);
 
 
 
@@ -62,11 +65,13 @@ class manajer_pemasaran
           round($akhir),
           round($forecast)
       );
-          $status4 = model_pemasaran::tambahDetails(
-          $_POST['nama_produk'],
-          $_POST['tanggal'],
-          round($akhir),
-          round($forecast)
+          $status4 = model_pemasaran::bacadetails(
+          $forecast,
+          $error,
+          $e,
+          $m,
+          $alpha,
+          $mape
       );
 
         if ($status == 'sukses') {
@@ -138,12 +143,11 @@ class manajer_pemasaran
 
     }
 
-    public function detail(){
+    public function details(){
+        $data = model_pemasaran::bacaDataPenjualan(
 
+        );
 
-        $produk = model_stok::bacaProduk();
-        $data = model_pemasaran::bacaDataPenjualan();
-        
         require_once 'konten/tampilan/detailperamalan.php';
     }
 }

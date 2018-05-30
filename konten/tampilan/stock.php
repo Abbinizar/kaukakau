@@ -67,7 +67,7 @@
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h1 class="page-header">Tabel Ketersediaan barang</h1>
                 <!--                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_stock">Tambah</button> -->
-                <hr>
+
                 <div class="panel">
                     <div class="panel-heading">
                         <div class="input-group">

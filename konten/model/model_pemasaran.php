@@ -92,9 +92,9 @@ class model_pemasaran
 
     public static function editdata()
     {
-       $db = DB::getInstance();
-       $hasil = $db->query("SELECT p.id, pr.namaproduk, p.tanggal, p.jumlahpenjualan, p.peramalan FROM penjualan p JOIN produk pr ON p.id_produk = pr.id WHERE p.id=$id;");
-       if ($hasil->rowCount() > 0) {
+     $db = DB::getInstance();
+     $hasil = $db->query("SELECT p.id, pr.namaproduk, p.tanggal, p.jumlahpenjualan, p.peramalan FROM penjualan p JOIN produk pr ON p.id_produk = pr.id WHERE p.id=$id;");
+     if ($hasil->rowCount() > 0) {
         foreach ($hasil as $item) {
             $output[] = array(
                 'id' => $item['id'],
@@ -163,9 +163,39 @@ public static function hapusDataToko($id)
     $db->query("DELETE FROM toko WHERE id = $id");
 } 
 
-public static function detail(){
-
+public static function tambahdetails($id, $peramalan, $error, $e, $m, $alpha, $mape)
+{
+    $db = DB::getInstance();
+    $status = $db->exec("INSERT INTO details(id, peramalan, error, e, m, alpha, mape) VALUES ($id, $peramalan, $error, $e, $m, $alpha, $mape);");
+    if ($status > 0) {
+        return 'sukses';
+    } else {
+        return 'gagal';
+    }
 }
+/*public static function bacaDetails()
+    {
+        $db = DB::getInstance();
+        $hasil = $db->query("SELECT id, peramalan, error, e, m, alpha, mape FROM details;");
+        if ($hasil->rowCount() > 0) {
+            foreach ($hasil as $item) {
+                $output[] = array(
+                    'id' => $item['id'],
+                    'peramalan' => $item['peramalan'],
+                    'error' => $item['error'],
+                    'e' => $item['e'],
+                    'm' => $item['m'],
+                    'alpha' => $item['alpha'],
+                    'mape' => $item['mape']
+                );
+            }
+            return $output;
+        } else {
+            return 'kosong';
+        }
+    }
+
+*/
 
 }
 ?>

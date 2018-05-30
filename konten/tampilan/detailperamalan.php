@@ -80,7 +80,6 @@
                                 <th scope="col">E</th>
                                 <th scope="col">M</th>
                                 <th scope="col">Alpha</th>
-                                <th scope="col">PE</th>
                                 <th scope="col">MAPE</th>
                             </tr>
                         </thead>
@@ -89,19 +88,18 @@
                             <tr>
                                 <
                                 <td><?php echo $item['peramalan'] ?></td>
-                                <td><?php echo "belum" ?></td>
-                                <td><?php echo "" ?></td>
-                                <td><?php echo "" ?></td>
-                                <td><?php echo "0.3" ?></td>
-                                <td><?php echo "" ?></td>
-                                <td><?php echo "88.75%" ?></td>
+                                <td><?php echo $item['error'] ?></td>
+                                <td><?php echo $item['e'] ?></td>
+                                <td><?php echo $item['m'] ?></td>
+                                <td><?php echo $item['alpha'] ?></td>
+                                <td><?php echo $item['mape'] ?></td>
                                 
                             </tr>
                             <?php } ?>
                         </tbody>
                     </table>
                     <?php } else { ?>
-                    <div class="alert alert-info">Tidak Ada Data Penjualan</div>
+                    <div class="alert alert-info">Tidak Ada Data Details</div>
                     <?php } ?>
                 </div>
             </div>
