@@ -59,7 +59,7 @@
                 class="sr-only">(current)</span></a></li>
                 <li><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
                 <li><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a></li>
-                <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
+<!--                 <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li> -->
             </ul>
         </div>
 

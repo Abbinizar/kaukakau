@@ -59,13 +59,13 @@
                     class="sr-only">(current)</span></a></li>
                     <li class="active"><a href="http://localhost/kaukakau/?c=manajer_stok&f=home">Stock</a></li>
                     <li><a href="http://localhost/kaukakau/?c=manajer_penjadwalan&f=home">Penjadwalan</a></li>
-                    <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li>
+<!--                     <li><a href="http://localhost/kaukakau/?c=manajer_pemasaran&f=toko">Daftar toko</a></li> -->
 
                 </ul>
             </div>
 
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h1 class="page-header">Tabel Ketersediaan barang</h1>
+                <h1 class="page-header">Tabel Ketersediaan kakau</h1>
                 <!--                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_stock">Tambah</button> -->
 
                 <div class="panel">
