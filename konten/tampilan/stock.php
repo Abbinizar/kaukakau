@@ -66,7 +66,7 @@
 
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h1 class="page-header">Tabel Ketersediaan barang</h1>
-<!--                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_stock">Tambah</button> -->
+                <!--                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input_data_stock">Tambah</button> -->
                 <hr>
                 <div class="panel">
                     <div class="panel-heading">
@@ -97,9 +97,9 @@
                                     <td><?php echo $item['peramalan_stock']."  Buah kakao" ?> </td>
                                     <td><?php echo $item['safety_stock'] ?></td>
                                     <td>
-                                    <a href="?c=manajer_pemasaran&f=editdata&id=<?php echo $item['id'] ?>" class="btn btn-primary" data-toggle="modal" data-target="#edit" > Edit</a>
-                                    <a href="?c=manajer_stok&f=hapus_stok&id=<?php echo $item['id']; ?>" class="btn btn-danger" > Delete</a>
-                                </td>
+                                        <a href="?c=manajer_stok&f=hapus_stok&id=<?php echo $item['id']; ?>" class="btn btn-danger" > Delete</a>
+                                    </td>                                                  
+
                                 </tr>
                                 <?php } ?>
                             </tbody>

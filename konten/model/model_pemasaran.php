@@ -55,6 +55,16 @@ class model_pemasaran
 
 
     }
+    public static function tambahJadwal($id_produk, $mulai, $akhir, $jumlah)
+    {
+        $db = DB::getInstance();
+        $status = $db->exec("INSERT INTO penjadwalan(id_produk, mulai, akhir, jumlah) VALUES ($id_produk, '$mulai', '$akhir', $jumlah);");
+        if ($status > 0) {
+            return 'sukses';
+        } else {
+            return 'gagal';
+        }
+    }
 
     public static function tambahDataPenjualan($id_produk, $tanggal, $jumlah, $peramalan)
     {

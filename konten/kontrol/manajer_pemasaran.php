@@ -24,8 +24,8 @@ class manajer_pemasaran
         require_once 'konten/tampilan/toko.php';
     }
 
-/*    1 coklat batang = 300 g membutuhkan 5 buah kakau*/
-/*     1 bulan produksi bisa mengkover seluruh kebutuan peramalan*/
+    /*    1 coklat batang = 300 g membutuhkan 5 buah kakau*/
+    /*     1 bulan produksi bisa mengkover seluruh kebutuan peramalan*/
     public function tambah_penjualan()
     {
         $dataSebelumnya = model_pemasaran::bacaPenjualanSebelumnya($_POST['tanggal']);
@@ -39,7 +39,10 @@ class manajer_pemasaran
         $peramalan_stock = $forecast * 5;
         $safety_stock = $peramalan_stock * 0.05;    
         $error = $ramalan - $jumlahTerjual;
-        $mape = $ramalan
+        $akhir = 30;
+        $error = $jumlahTerjual - $forecast;
+
+
 
         $status = model_pemasaran::tambahDataPenjualan(
             $_POST['nama_produk'],
@@ -52,6 +55,18 @@ class manajer_pemasaran
           $_POST['tanggal'],
           round($peramalan_stock),
           round($safety_stock)
+      );
+          $status3 = model_pemasaran::tambahJadwal(
+          $_POST['nama_produk'],
+          $_POST['tanggal'],
+          round($akhir),
+          round($forecast)
+      );
+          $status4 = model_pemasaran::tambahDetails(
+          $_POST['nama_produk'],
+          $_POST['tanggal'],
+          round($akhir),
+          round($forecast)
       );
 
         if ($status == 'sukses') {
@@ -124,7 +139,7 @@ class manajer_pemasaran
     }
 
     public function detail(){
-        
+
 
         $produk = model_stok::bacaProduk();
         $data = model_pemasaran::bacaDataPenjualan();

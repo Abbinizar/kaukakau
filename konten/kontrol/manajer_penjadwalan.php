@@ -8,6 +8,7 @@ class manajer_penjadwalan
     public function home(){
         $produk = model_stok::bacaProduk();
         $data = model_penjadwalan::bacaJadwal();
+
         require_once 'konten/tampilan/penjadwalan.php';
     }
 

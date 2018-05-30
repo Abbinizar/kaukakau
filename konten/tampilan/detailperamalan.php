@@ -80,8 +80,6 @@
                                 <th scope="col">E</th>
                                 <th scope="col">M</th>
                                 <th scope="col">Alpha</th>
-                                <th scope="col">Plus Alpha</th>
-                                <th scope="col">Min Alpha</th>
                                 <th scope="col">PE</th>
                                 <th scope="col">MAPE</th>
                             </tr>
@@ -89,13 +87,12 @@
                         <tbody>
                             <?php foreach ($data as $item) { ?>
                             <tr>
+                                <
                                 <td><?php echo $item['peramalan'] ?></td>
-                                <td><?php echo $error ?></td>
+                                <td><?php echo "belum" ?></td>
                                 <td><?php echo "" ?></td>
                                 <td><?php echo "" ?></td>
                                 <td><?php echo "0.3" ?></td>
-                                <td><?php echo "0.2" ?></td>
-                                <td><?php echo "0.2" ?></td>
                                 <td><?php echo "" ?></td>
                                 <td><?php echo "88.75%" ?></td>
                                 

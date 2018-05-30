@@ -96,10 +96,10 @@
                                     <td><?php echo $item['id'] ?></td>
                                     <td><?php echo $item['namaproduk'] ?></td>
                                     <td><?php echo $item['mulai'] ?></td>
-                                    <td><?php echo $item['akhir'] ?></td>
+                                    <td><?php echo "30 hari" ?></td>
                                     <td><?php echo $item['jumlah'] ?></td>
                                     <td>
-                                    <a href="?c=manajer_pemasaran&f=editdata&id=<?php echo $item['id'] ?>" class="btn btn-primary" data-toggle="modal" data-target="#edit" > Edit</a>
+
                                     <a href="?c=manajer_penjadwalan&f=hapus_jadwal&id=<?php echo $item['id']; ?>" class="btn btn-danger" > Delete</a>
                                     </td>                                                  
                                 </tr>
