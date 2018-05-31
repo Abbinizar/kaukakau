@@ -65,7 +65,7 @@ class manajer_pemasaran
           round($akhir),
           round($forecast)
       );
-          $status4 = model_pemasaran::bacadetails(
+/*          $status4 = model_pemasaran::bacadetails(
           $forecast,
           $error,
           $e,
@@ -73,7 +73,7 @@ class manajer_pemasaran
           $alpha,
           $mape
       );
-
+*/
         if ($status == 'sukses') {
             header("location:http://localhost/kaukakau/?c=manajer_pemasaran&f=forecast");
         } else {

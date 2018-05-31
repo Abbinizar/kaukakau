@@ -233,3 +233,37 @@
         </div>
     </div>
 </div>
+
+
+<!-- Modal edit data produk -->
+<div class="modal fade" id="edit_data_produk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="http://localhost/kaukakau/?c=manajer_stok&f=tambah_produk" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Data produk</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <label for="Tipe Produk">Tipe Produk</label>
+                        <input type="text" class="form-control" id="tipe_produk" placeholder="Tipe Produk"
+                               name="tipe_produk">
+                    </div>
+                    <div class="input-group">
+                        <label for="nama_produk">Nama Produk</label>
+                        <input type="text" class="form-control" id="nama_produk" name="nama_produk"
+                               placeholder="Nama Produk">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
